@@ -1,0 +1,33 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::table('users', function (Blueprint $table) {
+            $table->renameColumn('name', 'display_name');
+            $table->string('twitter_name')->nullable();
+            $table->text('bio')->nullable();
+            $table->enum('role', ['admin', 'staff', 'general'])->default('general');
+            $table->enum('status', ['active', 'inactive', 'deleted'])->default('active');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::table('users', function (Blueprint $table) {
+            $table->renameColumn('display_name', 'name');
+            $table->dropColumn(['twitter_name', 'bio', 'role', 'status']);
+        });
+    }
+};
