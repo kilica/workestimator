@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use App\Enums\InterestLevel;
+use App\Enums\EvaluationRating;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -26,6 +28,11 @@ class WorkEvaluation extends Model
         'good_work',
         'comment',
         'is_visible',
+    ];
+    
+    protected $casts = [
+        'interest_level' => InterestLevel::class,
+        'evaluation_rating' => EvaluationRating::class,
     ];
     
     /**

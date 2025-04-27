@@ -51,11 +51,11 @@
                             <div>
                                 <x-input-label for="interest_level" :value="__('関心度（3段階）')" />
                                 <select id="interest_level" name="interest_level" class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full" required>
-                                    @for($i = 1; $i <= 3; $i++)
-                                        <option value="{{ $i }}" {{ old('interest_level') == $i ? 'selected' : '' }}>
-                                            {{ $i }}
+                                    @foreach(\App\Enums\InterestLevel::options() as $value => $label)
+                                        <option value="{{ $value }}" {{ old('interest_level') == $value ? 'selected' : '' }}>
+                                            {{ $label }}
                                         </option>
-                                    @endfor
+                                    @endforeach
                                 </select>
                                 <x-input-error :messages="$errors->get('interest_level')" class="mt-2" />
                             </div>
@@ -64,11 +64,11 @@
                             <div>
                                 <x-input-label for="evaluation_rating" :value="__('評価（3段階）')" />
                                 <select id="evaluation_rating" name="evaluation_rating" class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full" required>
-                                    @for($i = 1; $i <= 3; $i++)
-                                        <option value="{{ $i }}" {{ old('evaluation_rating') == $i ? 'selected' : '' }}>
-                                            {{ $i }}
+                                    @foreach(\App\Enums\EvaluationRating::options() as $value => $label)
+                                        <option value="{{ $value }}" {{ old('evaluation_rating') == $value ? 'selected' : '' }}>
+                                            {{ $label }}
                                         </option>
-                                    @endfor
+                                    @endforeach
                                 </select>
                                 <x-input-error :messages="$errors->get('evaluation_rating')" class="mt-2" />
                             </div>
