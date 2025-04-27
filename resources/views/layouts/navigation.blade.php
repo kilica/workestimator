@@ -15,6 +15,17 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                    
+                    @auth
+                        @if(Auth::user()->role === 'admin')
+                            <x-nav-link :href="route('categories.index')" :active="request()->routeIs('categories.*')">
+                                {{ __('カテゴリ管理') }}
+                            </x-nav-link>
+                            <x-nav-link :href="route('tags.index')" :active="request()->routeIs('tags.*')">
+                                {{ __('タグ管理') }}
+                            </x-nav-link>
+                        @endif
+                    @endauth
                 </div>
             </div>
 
@@ -70,6 +81,17 @@
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
+            
+            @auth
+                @if(Auth::user()->role === 'admin')
+                    <x-responsive-nav-link :href="route('categories.index')" :active="request()->routeIs('categories.*')">
+                        {{ __('カテゴリ管理') }}
+                    </x-responsive-nav-link>
+                    <x-responsive-nav-link :href="route('tags.index')" :active="request()->routeIs('tags.*')">
+                        {{ __('タグ管理') }}
+                    </x-responsive-nav-link>
+                @endif
+            @endauth
         </div>
 
         <!-- Responsive Settings Options -->
