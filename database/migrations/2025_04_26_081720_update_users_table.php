@@ -12,7 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->renameColumn('name', 'display_name');
+            $table->string('display_name')->after('id');
+        });
+        
+        \DB::statement('UPDATE users SET display_name = name');
+        
+        Schema::table('users', function (Blueprint $table) {
+            $table->dropColumn('name');
             $table->string('twitter_name')->nullable();
             $table->text('bio')->nullable();
             $table->enum('role', ['admin', 'staff', 'general'])->default('general');
@@ -26,8 +32,14 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->renameColumn('display_name', 'name');
+            $table->string('name')->after('id');
             $table->dropColumn(['twitter_name', 'bio', 'role', 'status']);
+        });
+        
+        \DB::statement('UPDATE users SET name = display_name');
+        
+        Schema::table('users', function (Blueprint $table) {
+            $table->dropColumn('display_name');
         });
     }
 };
