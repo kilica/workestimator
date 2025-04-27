@@ -66,12 +66,19 @@ php artisan migrate
 php artisan db:seed
 ```
 
-6. Build assets:
+6. Set up storage for file uploads:
+```bash
+php artisan storage:link
+mkdir -p storage/app/public/covers
+chmod 775 storage/app/public/covers
+```
+
+7. Build assets:
 ```bash
 npm run build
 ```
 
-7. Start the server:
+8. Start the server:
 ```bash
 php artisan serve
 ```
