@@ -209,12 +209,12 @@
                                             <div class="flex space-x-2">
                                                 <div class="text-center">
                                                     <p class="text-xs text-gray-500">{{ __('関心度') }}</p>
-                                                    <p class="font-medium">{{ $evaluation->interest_level }}/3</p>
+                                                    <p class="font-medium">{{ $evaluation->interest_level->label() }}</p>
                                                 </div>
                                                 
                                                 <div class="text-center">
                                                     <p class="text-xs text-gray-500">{{ __('評価') }}</p>
-                                                    <p class="font-medium">{{ $evaluation->evaluation_rating }}/3</p>
+                                                    <p class="font-medium">{{ $evaluation->evaluation_rating->label() }}</p>
                                                 </div>
                                             </div>
                                         </div>
