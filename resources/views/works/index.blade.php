@@ -48,8 +48,11 @@
                                 <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded-full mr-2">
                                     {{ $work->category->name }}
                                 </span>
-                                <span class="text-sm text-gray-600">
-                                    {{ $work->user->display_name }}
+                                <span class="text-sm bg-green-100 text-green-800 px-2 py-1 rounded-full">
+                                    <svg class="w-3 h-3 inline-block mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path>
+                                    </svg>
+                                    {{ $work->evaluations->count() }}
                                 </span>
                             </div>
                             
