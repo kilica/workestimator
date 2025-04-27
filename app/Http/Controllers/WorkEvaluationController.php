@@ -73,10 +73,10 @@ class WorkEvaluationController extends Controller
             'comment' => 'nullable|string',
         ]);
         
-        $hasEvaluation = $validated['helped'] || $validated['grateful'] || $validated['amazing'] || 
-                         $validated['expectation'] || $validated['kind'] || $validated['genius'] || 
-                         $validated['encouragement'] || $validated['perfect_score'] || 
-                         $validated['excellent'] || $validated['good_work'];
+        $hasEvaluation = ($validated['helped'] ?? false) || ($validated['grateful'] ?? false) || ($validated['amazing'] ?? false) || 
+                         ($validated['expectation'] ?? false) || ($validated['kind'] ?? false) || ($validated['genius'] ?? false) || 
+                         ($validated['encouragement'] ?? false) || ($validated['perfect_score'] ?? false) || 
+                         ($validated['excellent'] ?? false) || ($validated['good_work'] ?? false);
                          
         if (!$hasEvaluation) {
             return back()->withInput()->withErrors(['evaluation' => '少なくとも1つの評価を選択してください。']);
@@ -151,10 +151,10 @@ class WorkEvaluationController extends Controller
             'comment' => 'nullable|string',
         ]);
         
-        $hasEvaluation = $validated['helped'] || $validated['grateful'] || $validated['amazing'] || 
-                         $validated['expectation'] || $validated['kind'] || $validated['genius'] || 
-                         $validated['encouragement'] || $validated['perfect_score'] || 
-                         $validated['excellent'] || $validated['good_work'];
+        $hasEvaluation = ($validated['helped'] ?? false) || ($validated['grateful'] ?? false) || ($validated['amazing'] ?? false) || 
+                         ($validated['expectation'] ?? false) || ($validated['kind'] ?? false) || ($validated['genius'] ?? false) || 
+                         ($validated['encouragement'] ?? false) || ($validated['perfect_score'] ?? false) || 
+                         ($validated['excellent'] ?? false) || ($validated['good_work'] ?? false);
                          
         if (!$hasEvaluation) {
             return back()->withInput()->withErrors(['evaluation' => '少なくとも1つの評価を選択してください。']);
