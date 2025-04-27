@@ -158,11 +158,13 @@
                                         @if($videoId)
                                             <div class="aspect-w-16 aspect-h-9">
                                                 <img src="https://img.youtube.com/vi/{{ $videoId }}/0.jpg" alt="YouTube Thumbnail" class="w-full h-auto rounded-lg">
-                                                <a href="{{ $videoUrl }}" target="_blank" class="absolute inset-0 flex items-center justify-center">
-                                                    <svg class="w-16 h-16 text-red-600" fill="currentColor" viewBox="0 0 24 24">
-                                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z" />
-                                                    </svg>
-                                                </a>
+                                                <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                                                    <a href="{{ $videoUrl }}" target="_blank" class="pointer-events-auto">
+                                                        <svg class="w-16 h-16 text-red-600" fill="currentColor" viewBox="0 0 24 24">
+                                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
                                             </div>
                                         @endif
                                     @endif
