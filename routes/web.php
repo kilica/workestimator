@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\WorkController;
 use App\Http\Controllers\WorkEvaluationController;
+use App\Http\Controllers\WorkEvaluationTagController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\TagController;
 use Illuminate\Support\Facades\Route;
@@ -39,6 +40,7 @@ Route::patch('/work-evaluations/{id}/toggle-visibility', [WorkEvaluationControll
 Route::middleware(['auth'])->group(function () {
     Route::resource('categories', CategoryController::class);
     Route::resource('tags', TagController::class);
+    Route::get('work-evaluation-tags', [WorkEvaluationTagController::class, 'index'])->name('work-evaluation-tags.index');
 });
 
 Route::middleware('auth')->group(function () {

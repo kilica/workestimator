@@ -24,6 +24,9 @@
                             <x-nav-link :href="route('tags.index')" :active="request()->routeIs('tags.*')">
                                 {{ __('タグ管理') }}
                             </x-nav-link>
+                            <x-nav-link :href="route('work-evaluation-tags.index')" :active="request()->routeIs('work-evaluation-tags.*')">
+                                {{ __('実績評価タグ管理') }}
+                            </x-nav-link>
                         @endif
                     @endauth
                 </div>
@@ -89,6 +92,9 @@
                     </x-responsive-nav-link>
                     <x-responsive-nav-link :href="route('tags.index')" :active="request()->routeIs('tags.*')">
                         {{ __('タグ管理') }}
+                    </x-responsive-nav-link>
+                    <x-responsive-nav-link :href="route('work-evaluation-tags.index')" :active="request()->routeIs('work-evaluation-tags.*')">
+                        {{ __('実績評価タグ管理') }}
                     </x-responsive-nav-link>
                 @endif
             @endauth
