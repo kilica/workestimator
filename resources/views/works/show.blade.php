@@ -156,8 +156,10 @@
                                         @endphp
                                         
                                         @if($videoId)
-                                            <div class="aspect-w-16 aspect-h-9">
-                                                <img src="https://img.youtube.com/vi/{{ $videoId }}/0.jpg" alt="YouTube Thumbnail" class="w-full h-auto rounded-lg">
+                                            <div class="relative">
+                                                <div class="aspect-w-16 aspect-h-9">
+                                                    <img src="https://img.youtube.com/vi/{{ $videoId }}/0.jpg" alt="YouTube Thumbnail" class="w-full h-auto rounded-lg">
+                                                </div>
                                                 <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
                                                     <a href="{{ $videoUrl }}" target="_blank" class="pointer-events-auto">
                                                         <svg class="w-16 h-16 text-red-600" fill="currentColor" viewBox="0 0 24 24">
