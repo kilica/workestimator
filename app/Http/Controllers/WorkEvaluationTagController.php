@@ -12,7 +12,7 @@ class WorkEvaluationTagController extends Controller
      */
     public function __construct()
     {
-        $this->middleware(['auth', 'admin']);
+        $this->middleware('auth');
     }
     
     /**
@@ -20,6 +20,10 @@ class WorkEvaluationTagController extends Controller
      */
     public function index()
     {
+        if (!Auth::user()->isAdmin()) {
+            return redirect()->route('dashboard')->with('error', '権限がありません。');
+        }
+        
         $evaluationTags = [
             'helped' => '助かりました〜',
             'grateful' => '圧倒的感謝',
