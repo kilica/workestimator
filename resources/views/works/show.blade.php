@@ -179,11 +179,16 @@
                         <div class="mb-6">
                             <h3 class="text-lg font-semibold mb-2">{{ __('関連リンク') }}</h3>
                             <div class="space-y-2">
-                                @foreach(explode("\n", $work->related_links) as $linkUrl)
-                                    @if(trim($linkUrl))
+                                @foreach(explode("\n", $work->related_links) as $linkLine)
+                                    @if(trim($linkLine))
+                                        @php
+                                            $parts = explode(' ', trim($linkLine), 2);
+                                            $url = $parts[0];
+                                            $title = isset($parts[1]) ? $parts[1] : $url;
+                                        @endphp
                                         <div class="bg-gray-50 p-3 rounded-lg">
-                                            <a href="{{ trim($linkUrl) }}" target="_blank" class="text-blue-600 hover:text-blue-800 underline break-all">
-                                                {{ trim($linkUrl) }}
+                                            <a href="{{ $url }}" target="_blank" class="text-blue-600 hover:text-blue-800 underline break-all">
+                                                {{ $title }}
                                             </a>
                                         </div>
                                     @endif

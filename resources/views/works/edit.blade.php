@@ -145,8 +145,8 @@
                         
                         <!-- Related Links -->
                         <div class="mt-4">
-                            <x-input-label for="related_links" :value="__('関連リンク（URLを改行区切りで入力）')" />
-                            <textarea id="related_links" name="related_links" rows="4" class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full" placeholder="https://example.com">{{ old('related_links', $work->related_links) }}</textarea>
+                            <x-input-label for="related_links" :value="__('関連リンク（URLを改行区切りで入力、URL 半角スペース タイトルの形式も可能）')" />
+                            <textarea id="related_links" name="related_links" rows="4" class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full" placeholder="https://example.com&#10;https://example.com サンプルサイト">{{ old('related_links', $work->related_links) }}</textarea>
                             <x-input-error :messages="$errors->get('related_links')" class="mt-2" />
                         </div>
                         
