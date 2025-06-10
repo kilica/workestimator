@@ -36,9 +36,17 @@
                             
                             <!-- Cover Image -->
                             <div class="col-span-2">
-                                <x-input-label for="cover_image" :value="__('カバー画像')" />
+                                <x-input-label for="cover_image" :value="__('メインカバー画像')" />
                                 <input id="cover_image" type="file" name="cover_image" class="block mt-1 w-full border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm" />
                                 <x-input-error :messages="$errors->get('cover_image')" class="mt-2" />
+                            </div>
+                            
+                            <!-- Additional Cover Images -->
+                            <div class="col-span-2">
+                                <x-input-label for="cover_images" :value="__('追加カバー画像（複数選択可）')" />
+                                <input id="cover_images" type="file" name="cover_images[]" multiple class="block mt-1 w-full border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm" />
+                                <p class="text-sm text-gray-600 mt-1">最大10枚まで選択できます</p>
+                                <x-input-error :messages="$errors->get('cover_images')" class="mt-2" />
                             </div>
                             
                             <!-- Category -->

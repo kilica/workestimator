@@ -54,6 +54,8 @@ class WorkController extends Controller
         $validated = $request->validate([
             'title' => 'required|string|max:255',
             'cover_image' => 'nullable|image|max:2048',
+            'cover_images' => 'nullable|array|max:10',
+            'cover_images.*' => 'image|max:2048',
             'category_id' => 'required|exists:categories,id',
             'difficulty_rating' => 'required|integer|min:0|max:5',
             'impact_rating' => 'required|integer|min:0|max:5',
@@ -77,6 +79,16 @@ class WorkController extends Controller
         
         $work = Work::create($validated);
         
+        if ($request->hasFile('cover_images')) {
+            foreach ($request->file('cover_images') as $index => $file) {
+                $path = $file->store('covers', 'public');
+                $work->images()->create([
+                    'image_path' => $path,
+                    'sort_order' => $index
+                ]);
+            }
+        }
+        
         if ($request->has('tags')) {
             $work->tags()->attach($request->tags);
         }
@@ -90,7 +102,7 @@ class WorkController extends Controller
      */
     public function show(string $id)
     {
-        $work = Work::with(['category', 'user', 'tags', 'evaluations.user'])->findOrFail($id);
+        $work = Work::with(['category', 'user', 'tags', 'evaluations.user', 'images'])->findOrFail($id);
         
         $evaluations = $work->evaluations()->whereHas('user', function($query) {
             $query->where('status', 'active');
@@ -104,7 +116,7 @@ class WorkController extends Controller
      */
     public function edit(string $id)
     {
-        $work = Work::with(['tags'])->findOrFail($id);
+        $work = Work::with(['tags', 'images'])->findOrFail($id);
         
         if (!Auth::user()->isAdmin() && !Auth::user()->isStaff()) {
             return redirect()->route('works.index')->with('error', '権限がありません。');
@@ -130,6 +142,8 @@ class WorkController extends Controller
         $validated = $request->validate([
             'title' => 'required|string|max:255',
             'cover_image' => 'nullable|image|max:2048',
+            'cover_images' => 'nullable|array|max:10',
+            'cover_images.*' => 'image|max:2048',
             'category_id' => 'required|exists:categories,id',
             'difficulty_rating' => 'required|integer|min:0|max:5',
             'impact_rating' => 'required|integer|min:0|max:5',
@@ -154,6 +168,16 @@ class WorkController extends Controller
         }
         
         $work->update($validated);
+        
+        if ($request->hasFile('cover_images')) {
+            foreach ($request->file('cover_images') as $index => $file) {
+                $path = $file->store('covers', 'public');
+                $work->images()->create([
+                    'image_path' => $path,
+                    'sort_order' => $work->images()->count() + $index
+                ]);
+            }
+        }
         
         if ($request->has('tags')) {
             $work->tags()->sync($request->tags);
