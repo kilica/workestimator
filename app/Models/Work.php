@@ -20,6 +20,7 @@ class Work extends Model
         'achievement',
         'improvements',
         'related_videos',
+        'faq',
         'user_id',
     ];
     

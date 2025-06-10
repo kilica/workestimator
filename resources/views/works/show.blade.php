@@ -142,6 +142,15 @@
                         </div>
                     </div>
                     
+                    @if($work->faq)
+                        <div class="mb-6">
+                            <h3 class="text-lg font-semibold mb-2">{{ __('FAQ（よくある質問）') }}</h3>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                {!! nl2br(e($work->faq)) !!}
+                            </div>
+                        </div>
+                    @endif
+                    
                     @if($work->related_videos)
                         <div class="mb-6">
                             <h3 class="text-lg font-semibold mb-2">{{ __('関連動画') }}</h3>
