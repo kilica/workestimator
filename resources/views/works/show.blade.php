@@ -174,6 +174,37 @@
                             </div>
                         </div>
                     @endif
+                    
+                    @if($work->faq)
+                        <div class="mb-6">
+                            <h3 class="text-lg font-semibold mb-2">{{ __('FAQ（よくある質問）') }}</h3>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                {!! nl2br(e($work->faq)) !!}
+                            </div>
+                        </div>
+                    @endif
+                    
+                    @if($work->related_links)
+                        <div class="mb-6">
+                            <h3 class="text-lg font-semibold mb-2">{{ __('関連リンク') }}</h3>
+                            <div class="space-y-2">
+                                @foreach(explode("\n", $work->related_links) as $linkLine)
+                                    @if(trim($linkLine))
+                                        @php
+                                            $parts = explode(' ', trim($linkLine), 2);
+                                            $url = $parts[0];
+                                            $title = isset($parts[1]) ? $parts[1] : $url;
+                                        @endphp
+                                        <div class="bg-gray-50 p-3 rounded-lg">
+                                            <a href="{{ $url }}" target="_blank" class="text-blue-600 hover:text-blue-800 underline break-all">
+                                                {{ $title }}
+                                            </a>
+                                        </div>
+                                    @endif
+                                @endforeach
+                            </div>
+                        </div>
+                    @endif
                 </div>
             </div>
             
