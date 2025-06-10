@@ -174,6 +174,23 @@
                             </div>
                         </div>
                     @endif
+                    
+                    @if($work->related_links)
+                        <div class="mb-6">
+                            <h3 class="text-lg font-semibold mb-2">{{ __('関連リンク') }}</h3>
+                            <div class="space-y-2">
+                                @foreach(explode("\n", $work->related_links) as $linkUrl)
+                                    @if(trim($linkUrl))
+                                        <div class="bg-gray-50 p-3 rounded-lg">
+                                            <a href="{{ trim($linkUrl) }}" target="_blank" class="text-blue-600 hover:text-blue-800 underline break-all">
+                                                {{ trim($linkUrl) }}
+                                            </a>
+                                        </div>
+                                    @endif
+                                @endforeach
+                            </div>
+                        </div>
+                    @endif
                 </div>
             </div>
             

@@ -62,6 +62,7 @@ class WorkController extends Controller
             'achievement' => 'nullable|string',
             'improvements' => 'nullable|string',
             'related_videos' => 'nullable|string',
+            'related_links' => 'nullable|string',
             'tags' => 'nullable|array',
             'tags.*' => 'exists:tags,id',
         ]);
@@ -136,6 +137,7 @@ class WorkController extends Controller
             'achievement' => 'nullable|string',
             'improvements' => 'nullable|string',
             'related_videos' => 'nullable|string',
+            'related_links' => 'nullable|string',
             'tags' => 'nullable|array',
             'tags.*' => 'exists:tags,id',
         ]);
