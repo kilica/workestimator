@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Work;
+use App\Models\WorkImage;
 use App\Models\Category;
 use App\Models\Tag;
 use Illuminate\Http\Request;
@@ -208,5 +209,28 @@ class WorkController extends Controller
         
         return redirect()->route('works.index')
             ->with('success', '実績が削除されました。');
+    }
+    
+    /**
+     * Remove a specific image from a work.
+     */
+    public function destroyImage(string $workId, string $imageId)
+    {
+        $work = Work::findOrFail($workId);
+        
+        if (!Auth::user()->isAdmin() && !Auth::user()->isStaff()) {
+            return redirect()->route('works.edit', $work->id)->with('error', '権限がありません。');
+        }
+        
+        $image = $work->images()->findOrFail($imageId);
+        
+        if ($image->image_path) {
+            Storage::disk('public')->delete($image->image_path);
+        }
+        
+        $image->delete();
+        
+        return redirect()->route('works.edit', $work->id)
+            ->with('success', '画像が削除されました。');
     }
 }

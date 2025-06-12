@@ -53,7 +53,16 @@
                                 @if($work->images->count() > 0)
                                     <div class="mb-2 grid grid-cols-4 gap-2">
                                         @foreach($work->images as $image)
-                                            <img src="{{ asset('storage/' . $image->image_path) }}" alt="Additional image" class="w-24 h-24 object-cover rounded">
+                                            <div class="relative">
+                                                <img src="{{ asset('storage/' . $image->image_path) }}" alt="Additional image" class="w-24 h-24 object-cover rounded">
+                                                <form method="POST" action="{{ route('works.images.destroy', [$work->id, $image->id]) }}" class="absolute top-1 right-1" onsubmit="return confirm('この画像を削除してもよろしいですか？');">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <button type="submit" class="bg-red-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500">
+                                                        ×
+                                                    </button>
+                                                </form>
+                                            </div>
                                         @endforeach
                                     </div>
                                 @endif

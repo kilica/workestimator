@@ -31,6 +31,9 @@ Route::get('/dashboard', [UserController::class, 'show'])
 Route::resource('users', UserController::class);
 
 Route::resource('works', WorkController::class);
+Route::delete('/works/{work}/images/{image}', [WorkController::class, 'destroyImage'])
+    ->middleware('auth')
+    ->name('works.images.destroy');
 
 Route::resource('work-evaluations', WorkEvaluationController::class);
 Route::patch('/work-evaluations/{id}/toggle-visibility', [WorkEvaluationController::class, 'toggleVisibility'])
