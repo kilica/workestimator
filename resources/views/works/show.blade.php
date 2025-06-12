@@ -30,9 +30,56 @@
 
             <!-- Work Details -->
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg mb-6">
-                <div class="relative">
-                    @if($work->cover_image)
-                        <img src="{{ asset('storage/' . $work->cover_image) }}" alt="{{ $work->title }}" class="w-full h-64 object-cover">
+                <div class="relative" x-data="imageSlider()" x-init="init()">
+                    @php
+                        $allImages = collect();
+                        if($work->cover_image) {
+                            $allImages->push((object)['path' => $work->cover_image, 'alt' => $work->title]);
+                        }
+                        foreach($work->images as $image) {
+                            $allImages->push((object)['path' => $image->image_path, 'alt' => $work->title]);
+                        }
+                    @endphp
+                    
+                    @if($allImages->count() > 0)
+                        <div class="relative overflow-hidden">
+                            @foreach($allImages as $index => $image)
+                                <div x-show="currentSlide === {{ $index }}" 
+                                     x-transition:enter="transition ease-out duration-300"
+                                     x-transition:enter-start="opacity-0 transform translate-x-full"
+                                     x-transition:enter-end="opacity-100 transform translate-x-0"
+                                     x-transition:leave="transition ease-in duration-300"
+                                     x-transition:leave-start="opacity-100 transform translate-x-0"
+                                     x-transition:leave-end="opacity-0 transform -translate-x-full"
+                                     class="w-full">
+                                    <img src="{{ asset('storage/' . $image->path) }}" alt="{{ $image->alt }}" class="w-full h-64 object-cover">
+                                </div>
+                            @endforeach
+                            
+                            @if($allImages->count() > 1)
+                                <button @click="previousSlide()" 
+                                        class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                    </svg>
+                                </button>
+                                
+                                <button @click="nextSlide()" 
+                                        class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-75 transition-all">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                                
+                                <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                                    @foreach($allImages as $index => $image)
+                                        <button @click="currentSlide = {{ $index }}" 
+                                                :class="currentSlide === {{ $index }} ? 'bg-white' : 'bg-white bg-opacity-50'"
+                                                class="w-3 h-3 rounded-full transition-all"></button>
+                                    @endforeach
+                                </div>
+                            @endif
+                        </div>
                     @else
                         <div class="w-full h-64 bg-gray-200 flex items-center justify-center">
                             <span class="text-gray-500">{{ __('画像なし') }}</span>
@@ -333,4 +380,29 @@
             </div>
         </div>
     </div>
+    
+    <script>
+    function imageSlider() {
+        return {
+            currentSlide: 0,
+            totalSlides: {{ $allImages->count() ?? 0 }},
+            
+            init() {
+                if (this.totalSlides > 1) {
+                    setInterval(() => {
+                        this.nextSlide();
+                    }, 5000);
+                }
+            },
+            
+            nextSlide() {
+                this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
+            },
+            
+            previousSlide() {
+                this.currentSlide = this.currentSlide === 0 ? this.totalSlides - 1 : this.currentSlide - 1;
+            }
+        }
+    }
+    </script>
 </x-app-layout>

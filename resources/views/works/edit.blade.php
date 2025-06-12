@@ -37,7 +37,7 @@
                             
                             <!-- Cover Image -->
                             <div class="col-span-2">
-                                <x-input-label for="cover_image" :value="__('カバー画像')" />
+                                <x-input-label for="cover_image" :value="__('メインカバー画像')" />
                                 @if($work->cover_image)
                                     <div class="mt-2 mb-4">
                                         <img src="{{ asset('storage/' . $work->cover_image) }}" alt="{{ $work->title }}" class="w-32 h-32 object-cover rounded">
@@ -45,6 +45,21 @@
                                 @endif
                                 <input id="cover_image" type="file" name="cover_image" class="block mt-1 w-full border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm" />
                                 <x-input-error :messages="$errors->get('cover_image')" class="mt-2" />
+                            </div>
+                            
+                            <!-- Additional Cover Images -->
+                            <div class="col-span-2">
+                                <x-input-label for="cover_images" :value="__('追加カバー画像（複数選択可）')" />
+                                @if($work->images->count() > 0)
+                                    <div class="mb-2 grid grid-cols-4 gap-2">
+                                        @foreach($work->images as $image)
+                                            <img src="{{ asset('storage/' . $image->image_path) }}" alt="Additional image" class="w-24 h-24 object-cover rounded">
+                                        @endforeach
+                                    </div>
+                                @endif
+                                <input id="cover_images" type="file" name="cover_images[]" multiple class="block mt-1 w-full border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm" />
+                                <p class="text-sm text-gray-600 mt-1">最大10枚まで選択できます</p>
+                                <x-input-error :messages="$errors->get('cover_images')" class="mt-2" />
                             </div>
                             
                             <!-- Category -->

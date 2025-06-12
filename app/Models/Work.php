@@ -56,4 +56,12 @@ class Work extends Model
     {
         return $this->hasMany(WorkEvaluation::class);
     }
+    
+    /**
+     * Get the images for the work.
+     */
+    public function images()
+    {
+        return $this->hasMany(WorkImage::class)->orderBy('sort_order');
+    }
 }
