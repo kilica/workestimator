@@ -171,21 +171,21 @@
                     <div class="mb-6">
                         <h3 class="text-lg font-semibold mb-2">{{ __('課題・背景') }}</h3>
                         <div class="bg-gray-50 p-4 rounded-lg">
-                            {!! nl2br(e($work->background)) !!}
+                            {!! app(\App\Services\MarkdownService::class)->toHtml($work->background) !!}
                         </div>
                     </div>
                     
                     <div class="mb-6">
                         <h3 class="text-lg font-semibold mb-2">{{ __('活躍') }}</h3>
                         <div class="bg-gray-50 p-4 rounded-lg">
-                            {!! nl2br(e($work->achievement)) !!}
+                            {!! app(\App\Services\MarkdownService::class)->toHtml($work->achievement) !!}
                         </div>
                     </div>
                     
                     <div class="mb-6">
                         <h3 class="text-lg font-semibold mb-2">{{ __('ここが良くなった！') }}</h3>
                         <div class="bg-gray-50 p-4 rounded-lg">
-                            {!! nl2br(e($work->improvements)) !!}
+                            {!! app(\App\Services\MarkdownService::class)->toHtml($work->improvements) !!}
                         </div>
                     </div>
                     
