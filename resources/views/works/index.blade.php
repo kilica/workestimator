@@ -28,6 +28,72 @@
                 </div>
             @endif
 
+            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg mb-6">
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold mb-4">{{ __('絞り込み条件') }}</h3>
+                    <form method="GET" action="{{ route('works.index') }}" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div>
+                            <label for="category_id" class="block text-sm font-medium text-gray-700 mb-1">{{ __('カテゴリ') }}</label>
+                            <select name="category_id" id="category_id" class="block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+                                <option value="">{{ __('すべて') }}</option>
+                                @foreach($categories as $category)
+                                    <option value="{{ $category->id }}" {{ request('category_id') == $category->id ? 'selected' : '' }}>
+                                        {{ $category->name }}
+                                    </option>
+                                @endforeach
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="difficulty_rating" class="block text-sm font-medium text-gray-700 mb-1">{{ __('難易度') }}</label>
+                            <select name="difficulty_rating" id="difficulty_rating" class="block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+                                <option value="">{{ __('すべて') }}</option>
+                                @for($i = 1; $i <= 5; $i++)
+                                    <option value="{{ $i }}" {{ request('difficulty_rating') == $i ? 'selected' : '' }}>
+                                        {{ $i }}
+                                    </option>
+                                @endfor
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="impact_rating" class="block text-sm font-medium text-gray-700 mb-1">{{ __('影響度') }}</label>
+                            <select name="impact_rating" id="impact_rating" class="block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+                                <option value="">{{ __('すべて') }}</option>
+                                @for($i = 1; $i <= 5; $i++)
+                                    <option value="{{ $i }}" {{ request('impact_rating') == $i ? 'selected' : '' }}>
+                                        {{ $i }}
+                                    </option>
+                                @endfor
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="progress_rating" class="block text-sm font-medium text-gray-700 mb-1">{{ __('進捗') }}</label>
+                            <select name="progress_rating" id="progress_rating" class="block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+                                <option value="">{{ __('すべて') }}</option>
+                                @for($i = 1; $i <= 5; $i++)
+                                    <option value="{{ $i }}" {{ request('progress_rating') == $i ? 'selected' : '' }}>
+                                        {{ $i }}
+                                    </option>
+                                @endfor
+                            </select>
+                        </div>
+
+                        <div class="md:col-span-2 lg:col-span-4 flex gap-2">
+                            <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                {{ __('絞り込み') }}
+                            </button>
+                            <a href="{{ route('works.index') }}" class="px-4 py-2 bg-gray-300 text-gray-700 rounded-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500">
+                                {{ __('クリア') }}
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 @forelse($works as $work)
                     <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
@@ -131,9 +197,7 @@
                 @endforelse
             </div>
             
-            <div class="mt-6">
-                {{ $works->links() }}
-            </div>
+
         </div>
     </div>
 </x-app-layout>
