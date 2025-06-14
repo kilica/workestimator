@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Work;
+use App\Models\WorkImage;
 use App\Models\Category;
 use App\Models\Tag;
 use Illuminate\Http\Request;
@@ -22,10 +23,33 @@ class WorkController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        $works = Work::with(['category', 'user', 'tags'])->latest()->paginate(10);
-        return view('works.index', compact('works'));
+        $query = Work::with(['category', 'user', 'tags']);
+        
+        if ($request->filled('category_id')) {
+            $query->where('category_id', $request->category_id);
+        }
+        
+        if ($request->filled('difficulty_rating')) {
+            $query->where('difficulty_rating', $request->difficulty_rating);
+        }
+        
+        if ($request->filled('impact_rating')) {
+            $query->where('impact_rating', $request->impact_rating);
+        }
+        
+        if ($request->filled('progress_rating')) {
+            $query->where('progress_rating', $request->progress_rating);
+        }
+        
+        $works = $query->orderBy('impact_rating', 'desc')
+                      ->orderBy('created_at', 'asc')
+                      ->get();
+        
+        $categories = Category::all();
+        
+        return view('works.index', compact('works', 'categories'));
     }
 
     /**
@@ -208,5 +232,28 @@ class WorkController extends Controller
         
         return redirect()->route('works.index')
             ->with('success', '実績が削除されました。');
+    }
+    
+    /**
+     * Remove a specific image from a work.
+     */
+    public function destroyImage(string $workId, string $imageId)
+    {
+        $work = Work::findOrFail($workId);
+        
+        if (!Auth::user()->isAdmin() && !Auth::user()->isStaff()) {
+            return redirect()->route('works.edit', $work->id)->with('error', '権限がありません。');
+        }
+        
+        $image = $work->images()->findOrFail($imageId);
+        
+        if ($image->image_path) {
+            Storage::disk('public')->delete($image->image_path);
+        }
+        
+        $image->delete();
+        
+        return redirect()->route('works.edit', $work->id)
+            ->with('success', '画像が削除されました。');
     }
 }
