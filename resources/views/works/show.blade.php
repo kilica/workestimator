@@ -169,21 +169,21 @@
                     </div>
                     
                     <div class="mb-6">
-                        <h3 class="text-lg font-semibold mb-2">{{ __('課題・背景') }}</h3>
+                        <h2 class="text-lg font-semibold mb-2">{{ __('課題・背景') }}</h2>
                         <div class="bg-gray-50 p-4 rounded-lg">
                             {!! app(\App\Services\MarkdownService::class)->toHtml($work->background) !!}
                         </div>
                     </div>
                     
                     <div class="mb-6">
-                        <h3 class="text-lg font-semibold mb-2">{{ __('活躍') }}</h3>
+                        <h2 class="text-lg font-semibold mb-2">{{ __('活躍') }}</h2>
                         <div class="bg-gray-50 p-4 rounded-lg">
                             {!! app(\App\Services\MarkdownService::class)->toHtml($work->achievement) !!}
                         </div>
                     </div>
                     
                     <div class="mb-6">
-                        <h3 class="text-lg font-semibold mb-2">{{ __('ここが良くなった！') }}</h3>
+                        <h2 class="text-lg font-semibold mb-2">{{ __('ここが良くなった！') }}</h2>
                         <div class="bg-gray-50 p-4 rounded-lg">
                             {!! app(\App\Services\MarkdownService::class)->toHtml($work->improvements) !!}
                         </div>
@@ -191,7 +191,7 @@
                     
                     @if($work->related_videos)
                         <div class="mb-6">
-                            <h3 class="text-lg font-semibold mb-2">{{ __('関連動画') }}</h3>
+                            <h2 class="text-lg font-semibold mb-2">{{ __('関連動画') }}</h2>
                             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                                 @foreach(explode("\n", $work->related_videos) as $videoUrl)
                                     @if(trim($videoUrl))
@@ -224,7 +224,7 @@
                     
                     @if($work->faq)
                         <div class="mb-6">
-                            <h3 class="text-lg font-semibold mb-2">{{ __('FAQ（よくある質問）') }}</h3>
+                            <h2 class="text-lg font-semibold mb-2">{{ __('FAQ（よくある質問）') }}</h2>
                             <div class="bg-gray-50 p-4 rounded-lg">
                                 {!! nl2br(e($work->faq)) !!}
                             </div>
@@ -233,7 +233,7 @@
                     
                     @if($work->related_links)
                         <div class="mb-6">
-                            <h3 class="text-lg font-semibold mb-2">{{ __('関連リンク') }}</h3>
+                            <h2 class="text-lg font-semibold mb-2">{{ __('関連リンク') }}</h2>
                             <div class="space-y-2">
                                 @foreach(explode("\n", $work->related_links) as $linkLine)
                                     @if(trim($linkLine))
@@ -259,7 +259,7 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg mb-6">
                 <div class="p-6">
                     <div class="flex justify-between items-center mb-4">
-                        <h3 class="text-lg font-semibold">{{ __('実績評価') }}</h3>
+                        <h2 class="text-lg font-semibold">{{ __('実績評価') }}</h2>
                         @auth
                             <a href="{{ route('work-evaluations.create', ['work_id' => $work->id]) }}" class="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700">
                                 {{ __('評価を投稿する') }}
