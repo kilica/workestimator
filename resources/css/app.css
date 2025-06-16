@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* カスタムh2スタイル - フォントサイズを2回り大きく */
+header h2,
+.bg-white.shadow h2 {
+    font-size: 1.875rem !important; /* text-3xl equivalent: 30px */
+}
