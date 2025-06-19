@@ -22,7 +22,12 @@ class WorkEvaluationController extends Controller
      */
     public function index()
     {
-        return redirect()->route('dashboard');
+        $evaluations = WorkEvaluation::with(['work', 'user'])
+            ->where('is_visible', true)
+            ->orderBy('created_at', 'desc')
+            ->paginate(20);
+
+        return view('work-evaluations.index', compact('evaluations'));
     }
 
     /**
