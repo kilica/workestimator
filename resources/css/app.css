@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    font-size: 14pt;
+    line-height: 1.8em;
+}
+
 /* カスタムh2スタイル - フォントサイズを2回り大きく */
 h2 {
     font-size: 1.875rem !important; /* text-3xl equivalent: 30px */
