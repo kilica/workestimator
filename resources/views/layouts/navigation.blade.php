@@ -15,6 +15,12 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('works.index')" :active="request()->routeIs('works.*')">
+                        {{ __('実績一覧') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('work-evaluations.index')" :active="request()->routeIs('work-evaluations.*')">
+                        {{ __('実績評価一覧') }}
+                    </x-nav-link>
                     
                     @auth
                         @if(Auth::user()->role === 'admin')
@@ -88,6 +94,12 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('works.index')" :active="request()->routeIs('works.*')">
+                {{ __('実績一覧') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('work-evaluations.index')" :active="request()->routeIs('work-evaluations.*')">
+                {{ __('実績評価一覧') }}
             </x-responsive-nav-link>
             
             @auth
