@@ -28,6 +28,13 @@
                 </div>
             @endif
 
+            <!-- Work Title -->
+            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg mb-6">
+                <div class="p-6">
+                    <h1 class="text-3xl font-bold text-gray-900 mb-4">{{ $work->title }}</h1>
+                </div>
+            </div>
+
             <!-- Work Details -->
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg mb-6">
                 <div class="relative" x-data="imageSlider()" x-init="init()">
@@ -51,8 +58,8 @@
                                      x-transition:leave="transition ease-in duration-300"
                                      x-transition:leave-start="opacity-100 transform translate-x-0"
                                      x-transition:leave-end="opacity-0 transform -translate-x-full"
-                                     class="w-full aspect-[4/3] bg-gray-100 flex items-center justify-center">
-                                    <img src="{{ asset('storage/' . $image->path) }}" alt="{{ $image->alt }}" class="max-w-full max-h-full object-contain">
+                                     class="w-full bg-gray-100 flex items-center justify-center" style="max-height: 500px;">
+                                    <img src="{{ asset('storage/' . $image->path) }}" alt="{{ $image->alt }}" class="max-w-full object-contain" style="max-height: 500px;">
                                 </div>
                             @endforeach
                             
@@ -81,13 +88,10 @@
                             @endif
                         </div>
                     @else
-                        <div class="w-full aspect-[4/3] bg-gray-200 flex items-center justify-center">
+                        <div class="w-full bg-gray-200 flex items-center justify-center" style="max-height: 500px; height: 300px;">
                             <span class="text-gray-500">{{ __('画像なし') }}</span>
                         </div>
                     @endif
-                    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6">
-                        <h1 class="text-3xl font-bold text-white">{{ $work->title }}</h1>
-                    </div>
                 </div>
                 
                 <div class="p-6">
@@ -388,11 +392,6 @@
             totalSlides: {{ $allImages->count() ?? 0 }},
             
             init() {
-                if (this.totalSlides > 1) {
-                    setInterval(() => {
-                        this.nextSlide();
-                    }, 5000);
-                }
             },
             
             nextSlide() {
