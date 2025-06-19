@@ -99,7 +99,7 @@
                     <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                         <div class="relative">
                             @if($work->cover_image)
-                                <img src="{{ asset('storage/' . $work->cover_image) }}" alt="{{ $work->title }}" class="w-full h-48 object-cover">
+                                <img src="{{ asset('storage/' . $work->cover_image) }}" alt="{{ $work->title }}" class="w-full h-48 object-cover object-top">
                             @else
                                 <div class="w-full h-48 bg-gray-200 flex items-center justify-center">
                                     <span class="text-gray-500">{{ __('画像なし') }}</span>
