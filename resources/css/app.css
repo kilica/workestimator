@@ -5,8 +5,31 @@
 /* カスタムh2スタイル - フォントサイズを2回り大きく */
 h2 {
     font-size: 1.875rem !important; /* text-3xl equivalent: 30px */
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 h3 {
     font-size: 1.5rem !important;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+h4 {
+    font-size: 1.25rem !important;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+ul {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+ul li {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-bottom: 0.25rem;
 }
