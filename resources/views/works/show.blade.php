@@ -230,7 +230,7 @@
                         <div class="mb-6">
                             <h2 class="text-lg font-semibold mb-2">{{ __('FAQ（よくある質問）') }}</h2>
                             <div class="bg-gray-50 p-4 rounded-lg">
-                                {!! nl2br(e($work->faq)) !!}
+                                {!! app(\App\Services\MarkdownService::class)->toHtml($work->faq) !!}
                             </div>
                         </div>
                     @endif
