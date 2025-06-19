@@ -51,8 +51,8 @@
                                      x-transition:leave="transition ease-in duration-300"
                                      x-transition:leave-start="opacity-100 transform translate-x-0"
                                      x-transition:leave-end="opacity-0 transform -translate-x-full"
-                                     class="w-full">
-                                    <img src="{{ asset('storage/' . $image->path) }}" alt="{{ $image->alt }}" class="w-full h-64 object-cover">
+                                     class="w-full aspect-[4/3] bg-gray-100 flex items-center justify-center">
+                                    <img src="{{ asset('storage/' . $image->path) }}" alt="{{ $image->alt }}" class="max-w-full max-h-full object-contain">
                                 </div>
                             @endforeach
                             
@@ -81,7 +81,7 @@
                             @endif
                         </div>
                     @else
-                        <div class="w-full h-64 bg-gray-200 flex items-center justify-center">
+                        <div class="w-full aspect-[4/3] bg-gray-200 flex items-center justify-center">
                             <span class="text-gray-500">{{ __('画像なし') }}</span>
                         </div>
                     @endif
