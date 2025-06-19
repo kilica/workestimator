@@ -7,6 +7,7 @@ use App\Http\Controllers\WorkEvaluationController;
 use App\Http\Controllers\WorkEvaluationTagController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\TagController;
+use App\Http\Controllers\FaqController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,6 +22,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/faq', [FaqController::class, 'index'])->name('faq');
 
 Route::get('/dashboard', [UserController::class, 'show'])
     ->middleware(['auth', 'verified'])
