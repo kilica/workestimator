@@ -10,15 +10,15 @@ body {
 /* カスタムh2スタイル - フォントサイズを2回り大きく */
 h2 {
     font-size: 1.875rem !important; /* text-3xl equivalent: 30px */
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 h3 {
     font-size: 1.5rem !important;
     font-weight: bold;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 h4 {
@@ -37,4 +37,9 @@ ul {
 
 li {
     display: list-item;
+}
+
+a {
+    color: darkblue;
+    text-decoration-style: dashed;
 }
