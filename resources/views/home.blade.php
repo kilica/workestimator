@@ -2,11 +2,12 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <!-- Hero Section -->
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg mb-8">
-                <div class="p-6 text-gray-900">
+            <div class="overflow-hidden shadow-sm sm:rounded-lg mb-8 relative" style="background-image: url('{{ asset('images/top-banner.png') }}'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 400px;">
+                <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+                <div class="relative z-10 p-6 text-white flex items-center justify-center min-h-[400px]">
                     <div class="text-center mb-8">
-                        <h1 class="text-4xl font-bold text-gray-900 mb-4">山田太郎議員 応援サイト</h1>
-                        <p>これだけの実績を誇る議員が他にいるか？</p>
+                        <h1 class="text-5xl font-bold text-white mb-4 drop-shadow-lg">山田太郎議員 応援サイト</h1>
+                        <p class="text-2xl text-white drop-shadow-md">国民の声を国政へ</p>
                     </div>
                 </div>
                 <div>
