@@ -66,18 +66,33 @@
                         
                         <div class="space-y-6">
                             <div class="bg-gray-50 p-4 rounded-lg">
-                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 自民党の基本政策は何ですか？</h4>
-                                <p class="text-gray-700">A: 自由民主党は、自由主義と民主主義を基調とし、経済成長による国民生活の向上、安全保障の確保、伝統と文化の継承を重視した政策を推進しています。</p>
+                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 自民党は表現規制の党ですか？</h4>
+                                <p class="text-gray-700">A: YesでもありNoでもあります。かつては間違いなくそうでした。しかしこの6年で、山田太郎議員と赤松健議員が大量得票して当選したため、表現規制には慎重になり、ついには党の公約にも「表現の自由」が載るようになりました。</p>
+                                <p><img src="/images/faq-05.png" /></p>
                             </div>
                             
                             <div class="bg-gray-50 p-4 rounded-lg">
-                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 党内での山田太郎議員の役職は？</h4>
-                                <p class="text-gray-700">A: 現在、○○部会長、○○委員会副委員長として党内の政策立案に携わっています。</p>
+                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 自民党だと党議拘束で山田太郎議員は何も出来ないと聞きました。本当でしょうか？</h4>
+                                <p class="text-gray-700">A: 全くの間違いです。山田太郎議員が自分の意見を通して数多くの実績を残していることからも分かると思います。</p>
+                                <p><img src="/images/faq-01.png" /></p>
                             </div>
-                            
+
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 党議拘束が問題じゃないとすると、なぜ自民党議員は自分が納得しない法案に賛成しているように見えるのでしょうか？</h4>
+                                <p class="text-gray-700">A: 多くの議員は、派閥に所属し、支援団体から選挙で支援を受け、寄付をもらっています。そうした派閥の長や支援団体からの指示があると従わざるを得ないことがあります。</p>
+                                <p class="text-gray-700">しかし山田太郎議員は無派閥、支援団体なし、団体献金なしで圧倒的得票をえているため、そうしたしがらみがないのです。</p>
+                                <p><img src="/images/faq-02.png" /></p>
+                            </div>
+
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 山田さんのおかげで自民党が表現規制をしなくなったとはいえ、それでも野党のほうが安全では？</h4>
+                                <p class="text-gray-700">A: 残念ながら、状況は非常に厳しいものがあります。共産党、国民民主党、立憲民主党はいずれもアダルトなどの表現を積極的に規制する方針を打ち出しています。</p>
+                                <p><img src="/images/faq-06.png" /></p>
+                            </div>
+
                             <div class="bg-gray-50 p-4 rounded-lg">
                                 <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 自民党への入党方法は？</h4>
-                                <p class="text-gray-700">A: 自民党への入党をご希望の方は、お住まいの地域の自民党支部または党本部にお問い合わせください。入党には一定の条件があります。</p>
+                                <p class="text-gray-700">A: <a href="https://taroyamada.jp/more-support/">こちら</a>をご覧ください。</p>
                             </div>
                         </div>
                     </div>
@@ -104,20 +119,6 @@
                                 <p class="text-gray-700">A: 地方の特色を活かした産業振興、UIJターンの促進、インフラ整備など、地方が自立的に発展できる政策を推進しています。</p>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- お問い合わせ -->
-                    <div class="mt-12 p-6 bg-blue-50 rounded-lg">
-                        <h3 class="text-xl font-bold text-gray-800 mb-4">その他のご質問について</h3>
-                        <p class="text-gray-700 mb-4">
-                            上記以外のご質問やより詳しい情報については、以下の方法でお問い合わせください。
-                        </p>
-                        <ul class="list-disc list-inside text-gray-700 space-y-2">
-                            <li>公式ウェブサイトのお問い合わせフォーム</li>
-                            <li>事務所への電話・FAX</li>
-                            <li>SNS（Twitter、Facebook）でのメッセージ</li>
-                            <li>各種イベントでの直接対話</li>
-                        </ul>
                     </div>
                 </div>
             </div>

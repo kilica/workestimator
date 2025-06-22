@@ -35,31 +35,33 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="mt-6">
-                            <h3 class="text-lg font-semibold mb-3">基本政策</h3>
-                            <ul class="list-disc list-inside text-gray-700 space-y-1">
-                                <li>表現の自由を守る</li>
-                                <li>こどもや障がい者に優しい社会</li>
-                                <li>若者の将来不安の解消</li>
-                                <li>デジタル社会の諸課題の解決</li>
-                                <li>経済成長をもたらす</li>
-                            </ul>
-                        </div>
-                        <div class="mt-6">
-                            <h3 class="text-lg font-semibold mb-3">主な役職履歴</h3>
-                            <ul class="list-disc list-inside text-gray-700 space-y-1">
-                                <li>デジタル大臣政務官</li>
-                                <li>内閣府大臣政務官</li>
-                                <li>文部科学大臣政務官</li>
-                                <li>復興大臣政務官</li>
-                                <li>参議院 地方創生及びデジタル社会の形成等に関する特別委員会 委員長</li>
-                                <li>党 知的財産戦略調査会 事務局長</li>
-                                <li>党 デジタル社会推進本部 事務局長代理（防災DX担当役員）</li>
-                                <li>党 文化立国調査会 事務局長代理</li>
-                                <li>党 こどもの自殺対策PT 座長</li>
-                                <li>党 「こども・若者」輝く未来創造本部 幹事</li>
-                                <li>広報本部 ネットメディア局 局長代理</li>
-                            </ul>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="mt-6">
+                                <h3 class="text-lg font-semibold mb-3">基本政策</h3>
+                                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                    <li>表現の自由を守る</li>
+                                    <li>こどもや障がい者に優しい社会</li>
+                                    <li>若者の将来不安の解消</li>
+                                    <li>デジタル社会の諸課題の解決</li>
+                                    <li>経済成長をもたらす</li>
+                                </ul>
+                            </div>
+                            <div class="mt-6">
+                                <h3 class="text-lg font-semibold mb-3">主な役職履歴</h3>
+                                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                    <li>デジタル大臣政務官</li>
+                                    <li>内閣府大臣政務官</li>
+                                    <li>文部科学大臣政務官</li>
+                                    <li>復興大臣政務官</li>
+                                    <li>参議院 地方創生及びデジタル社会の形成等に関する特別委員会 委員長</li>
+                                    <li>党 知的財産戦略調査会 事務局長</li>
+                                    <li>党 デジタル社会推進本部 事務局長代理（防災DX担当役員）</li>
+                                    <li>党 文化立国調査会 事務局長代理</li>
+                                    <li>党 こどもの自殺対策PT 座長</li>
+                                    <li>党 「こども・若者」輝く未来創造本部 幹事</li>
+                                    <li>広報本部 ネットメディア局 局長代理</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -255,7 +257,7 @@
 
                             <!-- 関連団体・支援組織 -->
                             <div class="bg-gray-50 p-4 rounded-lg">
-                                <h3 class="text-lg font-semibold mb-3 text-black-600">応援者</h3>
+                                <h3 class="text-lg font-semibold mb-3 text-black-600">支援者サイト・SNS</h3>
                                 <ul class="space-y-2">
                                     <li>
                                         <a href="https://x.com/ymdtrsp" class="text-blue-600 hover:text-blue-800 flex items-center">
@@ -287,6 +289,14 @@
                                                 <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd"/>
                                             </svg>
                                             山田太郎 YouTube文字起こし
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/@yamada-supportersNo.50" class="text-blue-600 hover:text-blue-800 flex items-center">
+                                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd"/>
+                                            </svg>
+                                            ゆっくり山田太郎
                                         </a>
                                     </li>
                                 </ul>
