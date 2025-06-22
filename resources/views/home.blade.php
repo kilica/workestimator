@@ -3,21 +3,19 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <!-- Hero Section -->
             <div class="overflow-hidden shadow-sm sm:rounded-lg mb-8 relative" style="background-image: url('{{ asset('images/top-banner.png') }}'); background-size: contain; background-position: center; background-repeat: no-repeat; height: 250px;">
-                <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+                <div class="absolute inset-0"></div>
                 <div class="relative z-10 p-6 text-white flex items-center justify-center h-full">
                     <div class="text-center">
-                        <h1 class="text-5xl font-bold text-white mb-4 drop-shadow-lg">山田太郎議員 応援サイト</h1>
-                        <p class="text-2xl text-white drop-shadow-md">国民の声を国政へ</p>
                     </div>
-                </div>
-                <div>
-                    <img src="/images/worksmap.png" alt="実績マップ" height="500px" />
                 </div>
             </div>
 
             <!-- 山田太郎議員の紹介 -->
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg mb-8">
                 <div class="p-6">
+                    <div>
+                        <img src="/images/worksmap.png" alt="実績マップ" height="500px" />
+                    </div>
                     <h2 class="text-2xl font-bold text-gray-900 mb-4">山田太郎議員の紹介</h2>
                     <div class="prose max-w-none">
                         <div class="grid md:grid-cols-2 gap-6">
