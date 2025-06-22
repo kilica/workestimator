@@ -2,7 +2,7 @@
     <x-slot name="header">
         <div class="flex justify-between items-center">
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                {{ __('実績一覧') }}
+                {{ __('山田太郎議員 実績一覧') }}
             </h2>
             @auth
                 @if(Auth::user()->isAdmin() || Auth::user()->isStaff())
@@ -30,6 +30,8 @@
 
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg mb-6">
                 <div class="p-6">
+                    <p>山田太郎議員の主な実績を確認できます。<a href="https://taroyamada.jp/works/">公式サイトの実績</a>もぜひご覧ください。</p>
+                    <p>各実績ページの一番下から、皆さんのコメントを入力できるようになっています。<a href="/register">ユーザー登録</a>・<a href="/login">ログイン</a>してぜひ応援メッセージをお送りください！</p>
                     <h3 class="text-lg font-semibold mb-4">{{ __('絞り込み条件') }}</h3>
                     <form method="GET" action="{{ route('works.index') }}" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                         <div>

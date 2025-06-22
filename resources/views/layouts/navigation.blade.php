@@ -21,6 +21,9 @@
                     <x-nav-link :href="route('work-evaluations.index')" :active="request()->routeIs('work-evaluations.*')">
                         {{ __('実績評価一覧') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('faq')" :active="request()->routeIs('faq')">
+                        {{ __('FAQ') }}
+                    </x-nav-link>
                     
                     @auth
                         @if(Auth::user()->role === 'admin')
@@ -100,6 +103,9 @@
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('work-evaluations.index')" :active="request()->routeIs('work-evaluations.*')">
                 {{ __('実績評価一覧') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('faq')" :active="request()->routeIs('faq')">
+                {{ __('FAQ') }}
             </x-responsive-nav-link>
             
             @auth
