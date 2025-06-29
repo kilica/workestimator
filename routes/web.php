@@ -24,6 +24,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/faq', [FaqController::class, 'index'])->name('faq');
+Route::get('/faq-2', [FaqController::class, 'faq2'])->name('faq-2');
 
 Route::get('/dashboard', [UserController::class, 'show'])
     ->middleware(['auth', 'verified'])

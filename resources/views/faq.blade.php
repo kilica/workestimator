@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('よくある質問（FAQ）') }}
+            {{ __('よくある質問（選挙・党）') }}
         </h2>
     </x-slot>
 
@@ -14,75 +14,17 @@
                     <div id="copyToast" class="fixed top-4 right-4 bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg transform translate-x-full transition-transform duration-300 z-50">
                         URLをコピーしました！
                     </div>
-                    
-                    <!-- 山田太郎議員について -->
-                    <div class="mb-12">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-6 border-b-2 border-blue-500 pb-2">
-                            山田太郎議員について
-                        </h3>
-                        
-                        <div class="space-y-6">
-                            <div id="howto-gather-votes" class="bg-gray-50 p-4 rounded-lg relative">
-                                <button onclick="copyToClipboard('#hoto-gather-votes')" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 transition-colors">
-                                    <svg class="w-5 h-5 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
-                                    </svg>
-                                </button>
-                                <h4 class="font-semibold text-lg text-gray-800 mb-2">
-                                    Q: 山田太郎議員は前回2019年の参議院選挙で、自民党比例代表候補代2位となる54万票の得票があったそうですが、なぜそんなに票を集めたのでしょうか？
-                                </h4>
-                                <p class="text-gray-700">A: </p>
-                            </div>
-                            
-                            <div id="why-ldp" class="bg-gray-50 p-4 rounded-lg relative">
-                                <button onclick="copyToClipboard('#why-ldp')" class="absolute top-2 right-2  text-gray-500 hover:text-gray-700 transition-colors">
-                                    <svg class="w-5 h-5 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
-                                    </svg>
-                                </button>
-                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: なぜ自民党から出ているのですか？　表現の自由にとって敵のような党ではないですか？</h4>
-                                <p class="text-gray-700">A: 確かに山田太郎議員が自民党に入った時点では表現規制勢力の強い党でした。</p>
-                                <p>しかし、自民党（与党）に入ることは、表現の自由を守るうえで非常に大きなメリットもあります。</p>
-                                <p>まず与党の議員の場合、<strong>法案が審議される前に</strong>官僚から相談を受け、修正を指示したり調整することができるようになります。この段階では、修正は比較的容易ですが、多くの人の合意を受けたあと、審議に入る頃には修正するには合意の取り直しになるため修正に対し抵抗が生まれてしまいます。</p>
-                                <p>また法案が審議される自民党の部会では<strong>全会一致が法案通過の原則なので、山田太郎議員一人が反対を貫けば法案を止めることができます</strong>。</p>
-                                <p>もし山田太郎議員が野党だと、反対できるようになるのは国会です。国会では最終的に多数決なので、山田太郎議員一人がどれだけ反対したところで法案は成立してしまいます。</p>
-                                <p>実際、山田太郎議員が自民党に入って以来、表現を規制する法案は国会に出なくなりました。</p>
-                                <p>また、2025年参議院選挙の<strong>公約</strong>では「表現の自由」という言葉まで載るようになり、山田太郎議員の活動が自民党に大きな影響を及ぼすようになっています。</p>
-                            </div>
-                            
-                            <div id="who-support" class="bg-gray-50 p-4 rounded-lg relative">
-                                <button onclick="copyToClipboard('#who-support')" class="absolute top-2 right-2  text-gray-500 hover:text-gray-700 transition-colors">
-                                    <svg class="w-5 h-5 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
-                                    </svg>
-                                </button>
-                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: どんな人、団体が山田太郎議員を支持しているのですか？</h4>
-                                <p class="text-gray-700">A: 一番コアな支持者は「表現の自由」を重視する漫画・アニメ・ゲームなどのコンテンツが好きな人たちです。</p>
-                                <p>また、こども家庭庁を創設し、児童手当の所得制限撤廃や発達障害の支援拡充を実現したため、子育て世代の方にも支持が広まっています。</p>
-                                <p>また、フリーランス新法で若者やフリーランスの方々からの支持を集めました。</p>
-                                <p>国立国会図書館のデジタル化では、研究者の方から強い支持を受けています。</p>
-                                <p>このように、表現の自由を中核に、幅広い支持を集めるようになっています。</p>
-                            </div>
 
-                            <div id="who-support" class="bg-gray-50 p-4 rounded-lg relative">
-                                <button onclick="copyToClipboard('#who-support')" class="absolute top-2 right-2  text-gray-500 hover:text-gray-700 transition-colors">
-                                    <svg class="w-5 h-5 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
-                                    </svg>
-                                </button>
-                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 山田太郎が表現の自由を訴えているのはオタク票狙いしてるだけでは？</h4>
-                                <p class="text-gray-700">A: もちろんそうですが、山田太郎議員が表現の自由の問題に取り組み始めた当初は、票が見込める状態ではありませんでした。</p>
-                                <p>当時、まだ「オタク票」はまとまっておらず、<strong>「表現の自由」に関わった議員は落選する</strong>、というジンクスが囁かれているほどでした。</p>
-                                <p>規制に反対すると「エロ議員」と言われ、<strong>得られる票より失う票のほうが多い</strong>と思われていたのでしょう。一般の支持者の前で「エロ議員」と野次られて平気な議員はほとんどいません。</p>
-                                <p>コミケ会場前での極寒・酷暑の中の演説も、始めた当初は足を止める人もなく「コミケを政治利用するな」という罵声を浴びるだけで秘書からは「票にならないからもう止めたら」と言われる始末でした。</p>
-                                <p>それでも山田太郎議員は訴え続けたのです。</p>
-                                <p>一般に、自分たちの要望を聞いて実現してくれる都合の良い議員なんていません。話くらいは聞いてくれても、それで終わりです。票が見込めなければなおさらです。</p>
-                                <p>山田太郎議員は、大して頼んでもいない頃から熱心に話を聞いてくれて、圧倒的な実力でそれを次々と実現してくれるという、<strong>意思と能力を兼ね備えたSランクレアな議員</strong>と言えます。失ったら二度と引けないと思ったほうが良いでしょう。</p>
-                            </div>
-
-                        </div>
+                    <!-- Navigation between FAQ pages -->
+                    <div class="mb-8 flex space-x-4">
+                        <span class="bg-gray-500 text-white px-4 py-2 rounded-lg">
+                            FAQ（選挙・党）
+                        </span>
+                        <a href="{{ route('faq-2') }}" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition-colors">
+                            FAQ（政策）
+                        </a>
                     </div>
-
+                    
                     <!-- 選挙について -->
                     <div class="mb-12">
                         <h3 class="text-2xl font-bold text-gray-800 mb-6 border-b-2 border-green-500 pb-2">
