@@ -13,4 +13,12 @@ class FaqController extends Controller
     {
         return view('faq');
     }
+
+    /**
+     * Display the second FAQ page (政策).
+     */
+    public function faq2()
+    {
+        return view('faq-2');
+    }
 }

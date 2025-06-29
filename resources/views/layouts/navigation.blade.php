@@ -108,7 +108,10 @@
                 {{ __('実績評価一覧') }}
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('faq')" :active="request()->routeIs('faq')">
-                {{ __('FAQ') }}
+                {{ __('FAQ（選挙・党）') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('faq-2')" :active="request()->routeIs('faq-2')">
+                {{ __('FAQ（政策）') }}
             </x-responsive-nav-link>
             
             @auth
