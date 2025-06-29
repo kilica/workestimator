@@ -6,25 +6,28 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ url('/') }}">
-                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800" />
+                        <span class="font-bold text-4xl">⋈</span>
                     </a>
                 </div>
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
-                    </x-nav-link>
                     <x-nav-link :href="route('works.index')" :active="request()->routeIs('works.*')">
                         {{ __('実績一覧') }}
                     </x-nav-link>
                     <x-nav-link :href="route('work-evaluations.index')" :active="request()->routeIs('work-evaluations.*')">
-                        {{ __('実績評価一覧') }}
+                        {{ __('みんなの評価') }}
                     </x-nav-link>
                     <x-nav-link :href="route('faq')" :active="request()->routeIs('faq')">
-                        {{ __('FAQ') }}
+                        {{ __('FAQ（選挙・党）') }}
                     </x-nav-link>
-                    
+                    <x-nav-link :href="route('faq-2')" :active="request()->routeIs('faq-2')">
+                        {{ __('FAQ（政策）') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                        {{ __('Dashboard') }}
+                    </x-nav-link>
+
                     @auth
                         @if(Auth::user()->role === 'admin')
                             <x-nav-link :href="route('categories.index')" :active="request()->routeIs('categories.*')">

@@ -22,35 +22,64 @@
                         </h3>
                         
                         <div class="space-y-6">
-                            <div id="yamada-profile" class="bg-gray-50 p-4 rounded-lg relative">
-                                <button onclick="copyToClipboard('#yamada-profile')" class="absolute top-2 right-2 p-2 text-gray-500 hover:text-gray-700 transition-colors">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <div id="howto-gather-votes" class="bg-gray-50 p-4 rounded-lg relative">
+                                <button onclick="copyToClipboard('#hoto-gather-votes')" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 transition-colors">
+                                    <svg class="w-5 h-5 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
                                     </svg>
                                 </button>
-                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 山田太郎議員の経歴を教えてください</h4>
-                                <p class="text-gray-700">A: 山田太郎議員は○○年生まれ、○○大学卒業後、○○業界で○○年間の実務経験を積み、○○年に政界入りしました。これまで○○委員会委員長、○○政務官などを歴任し、現在は参議院議員として活動しています。</p>
+                                <h4 class="font-semibold text-lg text-gray-800 mb-2">
+                                    Q: 山田太郎議員は前回2019年の参議院選挙で、自民党比例代表候補代2位となる54万票の得票があったそうですが、なぜそんなに票を集めたのでしょうか？
+                                </h4>
+                                <p class="text-gray-700">A: </p>
                             </div>
                             
-                            <div id="yamada-philosophy" class="bg-gray-50 p-4 rounded-lg relative">
-                                <button onclick="copyToClipboard('#yamada-philosophy')" class="absolute top-2 right-2 p-2 text-gray-500 hover:text-gray-700 transition-colors">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <div id="why-ldp" class="bg-gray-50 p-4 rounded-lg relative">
+                                <button onclick="copyToClipboard('#why-ldp')" class="absolute top-2 right-2  text-gray-500 hover:text-gray-700 transition-colors">
+                                    <svg class="w-5 h-5 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
                                     </svg>
                                 </button>
-                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 主な政治理念は何ですか？</h4>
-                                <p class="text-gray-700">A: 「国民一人ひとりが輝ける社会の実現」を基本理念とし、経済成長と社会保障の両立、教育の充実、地方創生に重点を置いた政策を推進しています。</p>
+                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: なぜ自民党から出ているのですか？　表現の自由にとって敵のような党ではないですか？</h4>
+                                <p class="text-gray-700">A: 確かに山田太郎議員が自民党に入った時点では表現規制勢力の強い党でした。</p>
+                                <p>しかし、自民党（与党）に入ることは、表現の自由を守るうえで非常に大きなメリットもあります。</p>
+                                <p>まず与党の議員の場合、<strong>法案が審議される前に</strong>官僚から相談を受け、修正を指示したり調整することができるようになります。この段階では、修正は比較的容易ですが、多くの人の合意を受けたあと、審議に入る頃には修正するには合意の取り直しになるため修正に対し抵抗が生まれてしまいます。</p>
+                                <p>また法案が審議される自民党の部会では<strong>全会一致が法案通過の原則なので、山田太郎議員一人が反対を貫けば法案を止めることができます</strong>。</p>
+                                <p>もし山田太郎議員が野党だと、反対できるようになるのは国会です。国会では最終的に多数決なので、山田太郎議員一人がどれだけ反対したところで法案は成立してしまいます。</p>
+                                <p>実際、山田太郎議員が自民党に入って以来、表現を規制する法案は国会に出なくなりました。</p>
+                                <p>また、2025年参議院選挙の<strong>公約</strong>では「表現の自由」という言葉まで載るようになり、山田太郎議員の活動が自民党に大きな影響を及ぼすようになっています。</p>
                             </div>
                             
-                            <div id="yamada-committees" class="bg-gray-50 p-4 rounded-lg relative">
-                                <button onclick="copyToClipboard('#yamada-committees')" class="absolute top-2 right-2 p-2 text-gray-500 hover:text-gray-700 transition-colors">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <div id="who-support" class="bg-gray-50 p-4 rounded-lg relative">
+                                <button onclick="copyToClipboard('#who-support')" class="absolute top-2 right-2  text-gray-500 hover:text-gray-700 transition-colors">
+                                    <svg class="w-5 h-5 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
                                     </svg>
                                 </button>
-                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: どのような委員会に所属していますか？</h4>
-                                <p class="text-gray-700">A: 現在、○○委員会、○○特別委員会に所属し、○○分野の政策立案に積極的に取り組んでいます。</p>
+                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: どんな人、団体が山田太郎議員を支持しているのですか？</h4>
+                                <p class="text-gray-700">A: 一番コアな支持者は「表現の自由」を重視する漫画・アニメ・ゲームなどのコンテンツが好きな人たちです。</p>
+                                <p>また、こども家庭庁を創設し、児童手当の所得制限撤廃や発達障害の支援拡充を実現したため、子育て世代の方にも支持が広まっています。</p>
+                                <p>また、フリーランス新法で若者やフリーランスの方々からの支持を集めました。</p>
+                                <p>国立国会図書館のデジタル化では、研究者の方から強い支持を受けています。</p>
+                                <p>このように、表現の自由を中核に、幅広い支持を集めるようになっています。</p>
                             </div>
+
+                            <div id="who-support" class="bg-gray-50 p-4 rounded-lg relative">
+                                <button onclick="copyToClipboard('#who-support')" class="absolute top-2 right-2  text-gray-500 hover:text-gray-700 transition-colors">
+                                    <svg class="w-5 h-5 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                                    </svg>
+                                </button>
+                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 山田太郎が表現の自由を訴えているのはオタク票狙いしてるだけでは？</h4>
+                                <p class="text-gray-700">A: もちろんそうですが、山田太郎議員が表現の自由の問題に取り組み始めた当初は、票が見込める状態ではありませんでした。</p>
+                                <p>当時、まだ「オタク票」はまとまっておらず、<strong>「表現の自由」に関わった議員は落選する</strong>、というジンクスが囁かれているほどでした。</p>
+                                <p>規制に反対すると「エロ議員」と言われ、<strong>得られる票より失う票のほうが多い</strong>と思われていたのでしょう。一般の支持者の前で「エロ議員」と野次られて平気な議員はほとんどいません。</p>
+                                <p>コミケ会場前での極寒・酷暑の中の演説も、始めた当初は足を止める人もなく「コミケを政治利用するな」という罵声を浴びるだけで秘書からは「票にならないからもう止めたら」と言われる始末でした。</p>
+                                <p>それでも山田太郎議員は訴え続けたのです。</p>
+                                <p>一般に、自分たちの要望を聞いて実現してくれる都合の良い議員なんていません。話くらいは聞いてくれても、それで終わりです。票が見込めなければなおさらです。</p>
+                                <p>山田太郎議員は、大して頼んでもいない頃から熱心に話を聞いてくれて、圧倒的な実力でそれを次々と実現してくれるという、<strong>意思と能力を兼ね備えたSランクレアな議員</strong>と言えます。失ったら二度と引けないと思ったほうが良いでしょう。</p>
+                            </div>
+
                         </div>
                     </div>
 
@@ -62,34 +91,94 @@
                         
                         <div class="space-y-6">
                             <div id="election-schedule" class="bg-gray-50 p-4 rounded-lg relative">
-                                <button onclick="copyToClipboard('#election-schedule')" class="absolute top-2 right-2 p-2 text-gray-500 hover:text-gray-700 transition-colors">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <button onclick="copyToClipboard('#election-schedule')" class="absolute top-2 right-2  text-gray-500 hover:text-gray-700 transition-colors">
+                                    <svg class="w-5 h-5 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
                                     </svg>
                                 </button>
                                 <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 次回の選挙はいつですか？</h4>
-                                <p class="text-gray-700">A: 参議院議員の任期は6年で、次回の参議院選挙は○○年夏頃に予定されています。正確な日程は内閣が決定し、公示されます。</p>
+                                <p class="text-gray-700">A: 参議院議員の任期は6年で、次回の参議院選挙は2025年7月20日（日）です。</p>
                             </div>
                             
                             <div id="election-district" class="bg-gray-50 p-4 rounded-lg relative">
-                                <button onclick="copyToClipboard('#election-district')" class="absolute top-2 right-2 p-2 text-gray-500 hover:text-gray-700 transition-colors">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <button onclick="copyToClipboard('#election-district')" class="absolute top-2 right-2  text-gray-500 hover:text-gray-700 transition-colors">
+                                    <svg class="w-5 h-5 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
                                     </svg>
                                 </button>
                                 <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: どの選挙区から立候補していますか？</h4>
-                                <p class="text-gray-700">A: 山田太郎議員は全国比例代表選挙区から立候補しています。全国どこからでも「山田太郎」とお書きいただけます。</p>
+                                <p class="text-gray-700">A: 山田太郎議員は全国比例代表選挙区から立候補しています。<strong>全国どこからでも「山田太郎」と書いて投票</strong>することが出来ます。</p>
                             </div>
                             
                             <div id="voting-method" class="bg-gray-50 p-4 rounded-lg relative">
-                                <button onclick="copyToClipboard('#voting-method')" class="absolute top-2 right-2 p-2 text-gray-500 hover:text-gray-700 transition-colors">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <button onclick="copyToClipboard('#voting-method')" class="absolute top-2 right-2  text-gray-500 hover:text-gray-700 transition-colors">
+                                    <svg class="w-5 h-5 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
                                     </svg>
                                 </button>
                                 <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 投票方法を教えてください</h4>
-                                <p class="text-gray-700">A: 参議院選挙では、選挙区選挙と比例代表選挙の2つの投票があります。比例代表選挙では、政党名または個人名（山田太郎）をお書きください。</p>
+                                <p class="text-gray-700">A: 山田太郎議員は2025年7月の参議院選挙では全国比例代表で立候補しています。そのため比例代表（2枚目）では、個人名（<strong>「山田太郎」</strong>）をお書きください。所属政党名を書いても山田太郎議員の当選にはほとんど影響しません。</p>
                             </div>
+
+                            <div id="akamatsu" class="bg-gray-50 p-4 rounded-lg relative">
+                                 <button onclick="copyToClipboard('#akamatsu')" class="absolute top-2 right-2  text-gray-500 hover:text-gray-700 transition-colors">
+                                    <svg class="w-5 h-5 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                                    </svg>
+                                </button>
+                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 赤松健議員も応援しているので、今回は赤松さんに投票しようと思います。</h4>
+                                <p class="text-gray-700">A: <img src="/images/akamatsu.jpg" /></p>
+                            </div>
+
+                            <div id="howto-support" class="bg-gray-50 p-4 rounded-lg relative">
+                                <button onclick="copyToClipboard('#howto-support')" class="absolute top-2 right-2  text-gray-500 hover:text-gray-700 transition-colors">
+                                    <svg class="w-5 h-5 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                                    </svg>
+                                </button>
+                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 山田太郎議員を応援したいと強く思いました。なにか力になれることはありますか？</h4>
+                                <p class="text-gray-700">A: <a href="https://taroyamada.jp/sns">公式ホームページに応援方法がまとめられています</a>ので、ご覧いただきぜひお力をお貸しください。Xで山田太郎議員をフォローしたりリポストしたりと、簡単なことから始めることができます。</p>
+                            </div>
+
+                            <div id="too-many-vote" class="bg-gray-50 p-4 rounded-lg relative">
+                                <button onclick="copyToClipboard('#too-many-vote')" class="absolute top-2 right-2  text-gray-500 hover:text-gray-700 transition-colors">
+                                    <svg class="w-5 h-5 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                                    </svg>
+                                </button>
+                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 前回の山田太郎議員、赤松健議員は50万票以上という大量の得票で当選していますが、他の表現の自由を標榜する議員に一部票を回して議員数を増やすべきではないでしょうか？</h4>
+                                <p class="text-gray-700">A: まず前提として、「表現の自由」票を分割する有効な方法がないため、<strong>「できればいいかもしれないけど現実的には困難」</strong>です。</p>
+                                <p>下手をすれば、どちらの議員も票が足らなくなって落選し共倒れになってしまいます。</p>
+                                <p>また、山田太郎議員、赤松健議員が大量の得票をしたことには大きな意義があります。「当選ラインの票数を超えた分はとりすぎで無駄」ではありません。両議員の大量の票は「表現の自由を重視する有権者が自民党支持者の中でも最大の勢力と言えるほどいる」ということを明らかにし、自民党も無視できなくなりました。</p>
+                                <p>さらに自民党は、公約に「表現の自由」を明記するまでになっています。</p>
+                            </div>
+
+                            <div id="dislike-ldp-member" class="bg-gray-50 p-4 rounded-lg relative">
+                                <button onclick="copyToClipboard('#dislike-ldp-member')" class="absolute top-2 right-2  text-gray-500 hover:text-gray-700 transition-colors">
+                                    <svg class="w-5 h-5 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                                    </svg>
+                                </button>
+                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 自民党の比例候補者に絶対当選してほしくない人がいます。山田太郎議員には頑張ってほしいと思いますが、投票は控えようかと思います。</h4>
+                                <p class="text-gray-700">A: 質問者さんの投票に関する意志は尊重したいと思います。選挙の仕組みについて解説しますので、参考にしていただけたらと思います。</p>
+                                <p>参議院比例代表では自民党の場合、だいたい100万票増えると当選者が一人増えます。山田太郎議員の得票数は50万票程度なので、<strong>山田太郎議員に投票したから当選者数が増えることはほぼ無い</strong>と思います。</p>
+                                <p>また、参議院の比例代表では、候補者は他党との戦いというよりも、<strong>自民党の他の候補との席の奪い合い</strong>という性格が強い選挙とも言われます。つまり、山田太郎議員に投票して山田太郎議員が当選することで、質問者さんの<strong>嫌いな候補者の席が一つ減る</strong>ことになります。</p>
+                                <p>そのため山田太郎議員に投票することは、質問者さんの<strong>嫌いな議員に利するというよりも落選につながる</strong>と思います。</p>
+                            </div>
+
+                            <div id="dislike-ldp-member" class="bg-gray-50 p-4 rounded-lg relative">
+                                <button onclick="copyToClipboard('#dislike-ldp-member')" class="absolute top-2 right-2  text-gray-500 hover:text-gray-700 transition-colors">
+                                    <svg class="w-5 h-5 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                                    </svg>
+                                </button>
+                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 自民党の比例代表の候補者一覧を見ると、山田太郎議員は一番下の方にありました。これでは当選は難しいでしょうか？</h4>
+                                <p class="text-gray-700">A: 参議院比例代表の仕組みでは、投票用紙に書かれた名前の多い順に当選していきます（各党2名の特定枠を除く）。そのため、<strong>名簿の順番に関係なく、たくさん名前を書かれれば当選</strong>します。</p>
+                                <p>実際、前回2019年の選挙のときも、山田太郎議員の名前は自民党候補者の中で一番最後の方でしたが、自民党の中で2番目の得票で見事当選しました。</p>
+                                <p>名簿の順番は、おそらく名前のあいうえお順に並んでいるだけだと思います。全く気にする必要はありません。</p>
+                                <p><strong>名簿の順番に意味があるのは衆議院選挙の比例代表</strong>です。参議院は関係ありません。</p>
+                            </div>
+
                         </div>
                     </div>
 
@@ -101,30 +190,33 @@
                         
                         <div class="space-y-6">
                             <div id="ldp-expression-regulation" class="bg-gray-50 p-4 rounded-lg relative">
-                                <button onclick="copyToClipboard('#ldp-expression-regulation')" class="absolute top-2 right-2 p-2 text-gray-500 hover:text-gray-700 transition-colors">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <button onclick="copyToClipboard('#ldp-expression-regulation')" class="absolute top-2 right-2  text-gray-500 hover:text-gray-700 transition-colors">
+                                    <svg class="w-5 h-5 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
                                     </svg>
                                 </button>
                                 <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 自民党は表現規制の党ですか？</h4>
                                 <p class="text-gray-700">A: YesでもありNoでもあります。かつては間違いなくそうでした。しかしこの6年で、山田太郎議員と赤松健議員が大量得票して当選したため、表現規制には慎重になり、ついには党の公約にも「表現の自由」が載るようになりました。</p>
+                                <p>ただし、いまでも表現の自由を規制したい議員は一定数います。山田太郎議員の得票数が減ってしまうと、党内の議論での発言力も小さくなってしまいます。是非応援お願いします。</p>
                                 <p><img src="/images/faq-05.png" /></p>
                             </div>
                             
                             <div id="ldp-party-discipline" class="bg-gray-50 p-4 rounded-lg relative">
-                                <button onclick="copyToClipboard('#ldp-party-discipline')" class="absolute top-2 right-2 p-2 text-gray-500 hover:text-gray-700 transition-colors">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <button onclick="copyToClipboard('#ldp-party-discipline')" class="absolute top-2 right-2  text-gray-500 hover:text-gray-700 transition-colors">
+                                    <svg class="w-5 h-5 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
                                     </svg>
                                 </button>
                                 <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 自民党だと党議拘束で山田太郎議員は何も出来ないと聞きました。本当でしょうか？</h4>
-                                <p class="text-gray-700">A: 全くの間違いです。山田太郎議員が自分の意見を通して数多くの実績を残していることからも分かると思います。</p>
+                                <p class="text-gray-700">A: 全くの間違いです。</p>
+                                <p>山田太郎議員が自分の意見を通して数多くの実績を残していることからも分かると思います。</p>
+                                <p>例えば、こども庁、こども基本法では保守派の議員からの強い反対がありましたが、成立させています。</p>
                                 <p><img src="/images/faq-01.png" /></p>
                             </div>
 
                             <div id="ldp-faction-influence" class="bg-gray-50 p-4 rounded-lg relative">
-                                <button onclick="copyToClipboard('#ldp-faction-influence')" class="absolute top-2 right-2 p-2 text-gray-500 hover:text-gray-700 transition-colors">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <button onclick="copyToClipboard('#ldp-faction-influence')" class="absolute top-2 right-2  text-gray-500 hover:text-gray-700 transition-colors">
+                                    <svg class="w-5 h-5 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
                                     </svg>
                                 </button>
@@ -135,63 +227,26 @@
                             </div>
 
                             <div id="ldp-vs-opposition" class="bg-gray-50 p-4 rounded-lg relative">
-                                <button onclick="copyToClipboard('#ldp-vs-opposition')" class="absolute top-2 right-2 p-2 text-gray-500 hover:text-gray-700 transition-colors">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <button onclick="copyToClipboard('#ldp-vs-opposition')" class="absolute top-2 right-2  text-gray-500 hover:text-gray-700 transition-colors">
+                                    <svg class="w-5 h-5 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
                                     </svg>
                                 </button>
                                 <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 山田さんのおかげで自民党が表現規制をしなくなったとはいえ、それでも野党のほうが安全では？</h4>
-                                <p class="text-gray-700">A: 残念ながら、状況は非常に厳しいものがあります。共産党、国民民主党、立憲民主党はいずれもアダルトなどの表現を積極的に規制する方針を打ち出しています。</p>
+                                <p class="text-gray-700">A: 残念ながら、状況は非常に厳しいものがあります。</p>
+                                <p>共産党、国民民主党、立憲民主党はいずれもアダルトなどの表現を積極的に規制する方針を打ち出しています。</p>
+                                <p>参政党も、党首の神谷さんが<a href="https://x.com/jinkamiya/status/1937890297696141817">表現規制の必要性をXで発言</a>しています。</p>
                                 <p><img src="/images/faq-06.png" /></p>
                             </div>
 
                             <div id="ldp-membership" class="bg-gray-50 p-4 rounded-lg relative">
-                                <button onclick="copyToClipboard('#ldp-membership')" class="absolute top-2 right-2 p-2 text-gray-500 hover:text-gray-700 transition-colors">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <button onclick="copyToClipboard('#ldp-membership')" class="absolute top-2 right-2  text-gray-500 hover:text-gray-700 transition-colors">
+                                    <svg class="w-5 h-5 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
                                     </svg>
                                 </button>
                                 <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 自民党への入党方法は？</h4>
                                 <p class="text-gray-700">A: <a href="https://taroyamada.jp/more-support/">こちら</a>をご覧ください。</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 政策について -->
-                    <div class="mb-12">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-2">
-                            政策について
-                        </h3>
-                        
-                        <div class="space-y-6">
-                            <div id="policy-focus-areas" class="bg-gray-50 p-4 rounded-lg relative">
-                                <button onclick="copyToClipboard('#policy-focus-areas')" class="absolute top-2 right-2 p-2 text-gray-500 hover:text-gray-700 transition-colors">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
-                                    </svg>
-                                </button>
-                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 重点的に取り組んでいる政策分野は？</h4>
-                                <p class="text-gray-700">A: 特に経済政策、教育政策、社会保障制度の充実に力を入れています。デジタル化の推進や地方創生にも積極的に取り組んでいます。</p>
-                            </div>
-                            
-                            <div id="childcare-support" class="bg-gray-50 p-4 rounded-lg relative">
-                                <button onclick="copyToClipboard('#childcare-support')" class="absolute top-2 right-2 p-2 text-gray-500 hover:text-gray-700 transition-colors">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
-                                    </svg>
-                                </button>
-                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 子育て支援についてどのような政策を推進していますか？</h4>
-                                <p class="text-gray-700">A: 保育所の整備、育児休業制度の充実、児童手当の拡充など、子育て世代が安心して子どもを育てられる環境づくりに取り組んでいます。</p>
-                            </div>
-                            
-                            <div id="regional-revitalization" class="bg-gray-50 p-4 rounded-lg relative">
-                                <button onclick="copyToClipboard('#regional-revitalization')" class="absolute top-2 right-2 p-2 text-gray-500 hover:text-gray-700 transition-colors">
-                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
-                                    </svg>
-                                </button>
-                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 地方創生についてはどのような取り組みを？</h4>
-                                <p class="text-gray-700">A: 地方の特色を活かした産業振興、UIJターンの促進、インフラ整備など、地方が自立的に発展できる政策を推進しています。</p>
                             </div>
                         </div>
                     </div>

@@ -198,8 +198,12 @@
                     </div>
                 @endforelse
             </div>
-            
-
+            <div>
+                <h2>表現の自由・その他政策 実績一覧</h2>
+                <img src="/images/worksmap-official-hyogen.png" />
+                <h2>こども・障がい者政策 実績一覧</h2>
+                <img src="/images/worksmap-official-child.png" />
+            </div>
         </div>
     </div>
 </x-app-layout>

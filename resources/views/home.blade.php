@@ -3,30 +3,24 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <!-- Hero Section -->
             <div class="overflow-hidden shadow-sm sm:rounded-lg mb-8 relative" style="background-image: url('{{ asset('images/top-banner.png') }}'); background-size: contain; background-position: center; background-repeat: no-repeat; height: 250px;">
-                <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+                <div class="absolute inset-0 bg-opacity-40"></div>
                 <div class="relative z-10 p-6 text-white flex items-center justify-center h-full">
                     <div class="text-center">
-                        <h1 class="text-5xl font-bold text-white mb-4 drop-shadow-lg">山田太郎議員 応援サイト</h1>
-                        <p class="text-2xl text-white drop-shadow-md">国民の声を国政へ</p>
                     </div>
-                </div>
-                <div>
-                    <img src="/images/worksmap.png" alt="実績マップ" height="500px" />
                 </div>
             </div>
 
             <!-- 山田太郎議員の紹介 -->
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg mb-8">
                 <div class="p-6">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-4">山田太郎議員の紹介</h2>
+                    <p class="p-6">このサイトでは、参議院議員　山田太郎議員の主な<a href="/works">実績</a>を分かりやすく紹介しています。各実績の最後には、皆さんの<strong>感想や応援メッセージを投稿</strong>できるようになっていますので、よければ<a href="/register">ユーザー登録</a>して投稿してください。</p>
+                    <div>
+                        <img src="/images/worksmap.png" alt="山田太郎議員 実績マップ" height="500px" />
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-16">山田太郎議員の紹介</h2>
                     <div class="prose max-w-none">
                         <div class="grid md:grid-cols-2 gap-6">
-                            <div>
-                                <div class="bg-gray-200 h-64 rounded-lg flex items-center justify-center mb-4">
-                                    <span class="text-gray-500">議員写真</span>
-                                </div>
-                            </div>
-                            <div>
+                            <div class="mt-6">
                                 <h3 class="text-lg font-semibold mb-3">プロフィール</h3>
                                 <ul class="space-y-2 text-gray-700">
                                     <li><strong>生年月日:</strong> 1967年5月12日</li>
@@ -34,10 +28,12 @@
                                     <li><strong>職歴:</strong> ネクステック株式会社 代表取締役社長等</li>
                                     <li><strong>当選回数:</strong> 参議院議員2期目</li>
                                 </ul>
-                            </div>
-                        </div>
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div class="mt-6">
+                                <p>
+                                    <a href="https://taroyamada.jp/profile/">→　公式サイトでプロフィールを確認する</a>
+                                </p>
+                                <div>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/oWHBu0FZMYw?si=Jurae-3olz1I7zxV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
                                 <h3 class="text-lg font-semibold mb-3">基本政策</h3>
                                 <ul class="list-disc list-inside text-gray-700 space-y-1">
                                     <li>表現の自由を守る</li>
@@ -46,6 +42,9 @@
                                     <li>デジタル社会の諸課題の解決</li>
                                     <li>経済成長をもたらす</li>
                                 </ul>
+                                <p>
+                                    <a href="https://taroyamada.jp/basic-policy/">→　公式サイトで基本政策を確認する</a>
+                                </p>
                             </div>
                             <div class="mt-6">
                                 <h3 class="text-lg font-semibold mb-3">主な役職履歴</h3>
@@ -146,7 +145,13 @@
                                             <li><a href="https://taroyamada.jp/works/?category=kind">「こどもや障がい者に優しい社会」の実績</a></li>
                                         </ul>
                                         <li><a href="https://taroyamada.jp/sns/">みんなの応援ツイート</a>を拡散しよう</li>
-                                        <li>ハッシュタグ <code>#表現の自由は山田太郎</code> <code>#こども政策は山田太郎</code> <code>#デジタルは山田太郎</code> <code>#製造業は山田太郎</code> の使用</li>
+                                        <li>以下のハッシュタグを付けてSNSにポストして応援してね。
+                                            <ul>
+                                                <li><a href="https://x.com/">#表現の自由は山田太郎</a></li>
+                                                <li><a href="">#こども政策は山田太郎</a></li>
+                                                <li><a href="">#デジタルは山田太郎</a></li>
+                                                <li><a href="">#製造業は山田太郎</a></li>
+                                            </ul>
                                         <li>友人・知人への情報共有</li>
                                     </ul>
                                 </div>
@@ -171,16 +176,6 @@
                                         <li>公式サイトのイベント情報をチェック</li>
                                         <li>SNSでの最新情報をフォロー</li>
                                     </ul>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-blue-50 border-l-4 border-blue-400 p-4 mt-6">
-                            <div class="flex">
-                                <div class="ml-3">
-                                    <p class="text-sm text-blue-700">
-                                        本サイトは山田太郎議員を応援する有志にて作られており、山田太郎議員御本人及び山田太郎事務所とは無関係です。
-                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -310,6 +305,14 @@
                                     <p class="text-sm text-gray-700">
                                         <strong>本サイトについて:</strong>
                                         本サイトは山田太郎議員を応援する有志にて作られており、山田太郎議員御本人及び山田太郎事務所とは無関係です。
+                                    </p>
+                                    <p class="text-sm text-gray-700">
+                                        <strong>実績アイキャッチ画像について</strong>
+                                        山田太郎事務所で制作したものを許可を得て使用しています。
+                                    </p>
+                                    <p class="text-sm text-gray-700">
+                                        <strong>その他、説明画像について:</strong>
+                                        有志で制作したものをそれぞれ制作者に許可を得て使用しています。
                                     </p>
                                 </div>
                             </div>
