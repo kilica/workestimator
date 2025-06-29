@@ -24,109 +24,78 @@
                             FAQ（政策）
                         </span>
                     </div>
-                    
-                    <!-- 山田太郎議員について -->
-                    <div class="mb-12">
-                        <h3 class="text-2xl font-bold text-gray-800 mb-6 border-b-2 border-blue-500 pb-2">
-                            山田太郎議員について
-                        </h3>
-                        
-                        <div class="space-y-6">
-                            <div id="howto-gather-votes" class="bg-gray-50 p-4 rounded-lg relative">
-                                <button onclick="copyToClipboard('#howto-gather-votes')" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 transition-colors">
-                                    <svg class="w-5 h-5 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
-                                    </svg>
-                                </button>
-                                <h4 class="font-semibold text-lg text-gray-800 mb-2">
-                                    Q: 山田太郎議員は前回2019年の参議院選挙で、自民党比例代表候補代2位となる54万票の得票があったそうですが、なぜそんなに票を集めたのでしょうか？
-                                </h4>
-                                <p class="text-gray-700">A: </p>
-                            </div>
-                            
-                            <div id="why-ldp" class="bg-gray-50 p-4 rounded-lg relative">
-                                <button onclick="copyToClipboard('#why-ldp')" class="absolute top-2 right-2  text-gray-500 hover:text-gray-700 transition-colors">
-                                    <svg class="w-5 h-5 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
-                                    </svg>
-                                </button>
-                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: なぜ自民党から出ているのですか？　表現の自由にとって敵のような党ではないですか？</h4>
-                                <p class="text-gray-700">A: 確かに山田太郎議員が自民党に入った時点では表現規制勢力の強い党でした。</p>
-                                <p>しかし、自民党（与党）に入ることは、表現の自由を守るうえで非常に大きなメリットもあります。</p>
-                                <p>まず与党の議員の場合、<strong>法案が審議される前に</strong>官僚から相談を受け、修正を指示したり調整することができるようになります。この段階では、修正は比較的容易ですが、多くの人の合意を受けたあと、審議に入る頃には修正するには合意の取り直しになるため修正に対し抵抗が生まれてしまいます。</p>
-                                <p>また法案が審議される自民党の部会では<strong>全会一致が法案通過の原則なので、山田太郎議員一人が反対を貫けば法案を止めることができます</strong>。</p>
-                                <p>もし山田太郎議員が野党だと、反対できるようになるのは国会です。国会では最終的に多数決なので、山田太郎議員一人がどれだけ反対したところで法案は成立してしまいます。</p>
-                                <p>実際、山田太郎議員が自民党に入って以来、表現を規制する法案は国会に出なくなりました。</p>
-                                <p>また、2025年参議院選挙の<strong>公約</strong>では「表現の自由」という言葉まで載るようになり、山田太郎議員の活動が自民党に大きな影響を及ぼすようになっています。</p>
-                            </div>
-                            
-                            <div id="yamada-supporters" class="bg-gray-50 p-4 rounded-lg relative">
-                                <button onclick="copyToClipboard('#yamada-supporters')" class="absolute top-2 right-2  text-gray-500 hover:text-gray-700 transition-colors">
-                                    <svg class="w-5 h-5 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
-                                    </svg>
-                                </button>
-                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: どんな人、団体が山田太郎議員を支持しているのですか？</h4>
-                                <p class="text-gray-700">A: 一番コアな支持者は「表現の自由」を重視する漫画・アニメ・ゲームなどのコンテンツが好きな人たちです。</p>
-                                <p>また、こども家庭庁を創設し、児童手当の所得制限撤廃や発達障害の支援拡充を実現したため、子育て世代の方にも支持が広まっています。</p>
-                                <p>また、フリーランス新法で若者やフリーランスの方々からの支持を集めました。</p>
-                                <p>国立国会図書館のデジタル化では、研究者の方から強い支持を受けています。</p>
-                                <p>このように、表現の自由を中核に、幅広い支持を集めるようになっています。</p>
-                            </div>
-                        </div>
-                    </div>
 
                     <!-- 政策について -->
                     <div class="mb-12">
+                        <!-- 政策について -->
                         <h3 class="text-2xl font-bold text-gray-800 mb-6 border-b-2 border-purple-500 pb-2">
-                            政策について
+                            政治手法について
                         </h3>
-                        
+
                         <div class="space-y-6">
-                            <div id="policy-focus-areas" class="bg-gray-50 p-4 rounded-lg relative">
-                                <button onclick="copyToClipboard('#policy-focus-areas')" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 transition-colors">
+                            <div id="175-deletion" class="bg-gray-50 p-4 rounded-lg relative">
+                                <button onclick="copyToClipboard('#175-deletion')" class="absolute top-2 right-2  text-gray-500 hover:text-gray-700 transition-colors">
                                     <svg class="w-5 h-5 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
                                     </svg>
                                 </button>
-                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 山田太郎議員の重点政策分野は何ですか？</h4>
-                                <p class="text-gray-700">A: 山田太郎議員は「表現の自由」を中核に、こども家庭庁の創設、児童手当の所得制限撤廃、発達障害の支援拡充、フリーランス新法など、幅広い政策分野で実績を残しています。</p>
-                                <p>国立国会図書館のデジタル化では、研究者の方から強い支持を受けています。</p>
-                                <p>このように、表現の自由を中核に、幅広い政策で国民生活の向上に取り組んでいます。</p>
+                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 刑法175条（わいせつ物頒布罪）の改正について、全く動きがないのですがやる気がないのでしょうか？</h4>
+                                <p class="text-gray-700">A: 山田太郎議員は、刑法175条のわいせつ物頒布に対する規制を日本の表現の自由における最大の課題の一つと考えています</p>
+                                <p>山田太郎議員の政治手法はかなり慎重なもので、動くことで悪影響が出る場合は動きません。いきあたたりばったりなパフォーマンスは避けます。</p>
+                                <p>例えば、<a href="https://taroyamada.info/works/5">香川県のゲーム規制問題</a>で、香川県在住の少年が香川県を相手取って裁判を起こした時、これを応援する議員もいましたが山田太郎議員は動きませんでした。これは、万一裁判に負けたときに、ゲーム規制を導入しようか迷っている他県に対して「ゲーム規制を導入しても問題ない」という司法のお墨付きを与えてしまうからです。</p>
+                                <p>また、<a href="https://taroyamada.info/works/7">クレジットカード会社による表現規制問題</a>でアメリカVISA本社を訪れて副社長と面談したときも、あらかじめ折衝を重ねて「望んだ回答を得られる」と踏んだうえで訪問しています。これも、パフォーマンスで事前調整もせずに行って「いや、VISAは道徳的に問題ありと判断した商品は扱わせない方針なんです」という回答を出されたらこの問題の解決は決定的に難しくなっていました。</p>
+                                <p>実際には動いて準備をしていても、表に出さずに成果が確定的になるまで静かにしていることもあります。下手に騒ぐと、反対勢力が対抗して邪魔をしていること事があるからです。</p>
+                                <p>刑法175条がどのような状況にあるのか分かりませんが、下手に騒ぐと「却って規制が強くなる」おそれがあります。事実、立憲民主党、国民民主党、共産党などアダルトな表現に対する規制を強めようという強い動きがあります。</p>
+                                <p>一方で、山田太郎議員は非常に粘り強く活動する議員でもあります。花粉症対策は2013年から始めて10年以上かけて政府の関係閣僚会議で議論する問題にまでこぎつけていますし、こども家庭庁も準備を始めて5年以上経ったところで現れた僅かなチャンスを掴まえて実現しています。</p>
+                                <p>刑法175条についても、引き続き取り組んでおり、他にできそうな議員もいない状況ですので、ぜひ山田太郎議員にご期待いただけたらと思います</p>
+                                <ul>
+                                    <li><a href="https://www.youtube.com/watch?v=IPb3Nw6uxsk&t=1389s">【第411回】荻野幸太郎さんと刑法175条特集 【山田太郎のさんちゃんねる】 - YouTube</a></li>
+                                    <li><a href="https://www.youtube.com/watch?v=E_T45dnXxSc&t=1194s">【第497回】このままでいいのか?刑法175条〜表現の自由とわいせつ規制〜（2022/06/01） - YouTube</a></li>
+                                    <li><a href="https://www.youtube.com/watch?v=9vyzDmbmqj0">【第555回】春画から考える刑法175条 (2023/10/04) #山田太郎のさんちゃんねる - YouTube</a></li>
+                                </ul>
                             </div>
 
-                            <div id="childcare-support" class="bg-gray-50 p-4 rounded-lg relative">
-                                <button onclick="copyToClipboard('#childcare-support')" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 transition-colors">
+                            <div id="hyogen-problems" class="bg-gray-50 p-4 rounded-lg relative">
+                                <button onclick="copyToClipboard('#hyogen-problems')" class="absolute top-2 right-2  text-gray-500 hover:text-gray-700 transition-colors">
                                     <svg class="w-5 h-5 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
                                     </svg>
                                 </button>
-                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 子育て支援についてどのような取り組みをしていますか？</h4>
-                                <p class="text-gray-700">A: こども家庭庁を創設し、児童手当の所得制限撤廃や発達障害の支援拡充を実現しました。</p>
-                                <p>例えば、こども庁、こども基本法では保守派の議員からの強い反対がありましたが、成立させています。</p>
-                                <p>これらの取り組みにより、子育て世代の方々からの支持が広まっています。</p>
+                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 山田太郎議員が与党自民党の議員になったことで表現の自由の問題は無くなったの？</h4>
+                                <p class="text-gray-700">A: 残念ながら、まだ多くの問題が残っており、山田太郎議員の仕事も山積みです。</p>
+                                <p>まず国会議員だからといって何でもできるわけではなく、国の立法と行政の監視が主な活動範囲となります。そのため、以下のような問題に直接対処するには限界があります。</p>
+                                <ul>
+                                    <li>行政・司法</li>
+                                    <li>地方</li>
+                                    <li>民間</li>
+                                    <li>国際条約</li>
+                                </ul>
                             </div>
 
-                            <div id="freelance-support" class="bg-gray-50 p-4 rounded-lg relative">
-                                <button onclick="copyToClipboard('#freelance-support')" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 transition-colors">
-                                    <svg class="w-5 h-5 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
-                                    </svg>
-                                </button>
-                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: フリーランス支援についてはどうですか？</h4>
-                                <p class="text-gray-700">A: フリーランス新法を成立させ、若者やフリーランスの方々からの支持を集めました。</p>
-                                <p>働き方の多様化に対応した法整備を進め、フリーランスの方々の労働環境改善に取り組んでいます。</p>
+                            <div id="hyogen-problems" class="bg-gray-50 p-4 rounded-lg relative">
+                                <div class="flex justify-end mb-4">
+                                    <button onclick="copyToClipboard('#hyogen-problems')" class="absolute top-2 right-2  text-gray-500 hover:text-gray-700 transition-colors">
+                                        <svg class="w-5 h-5 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: この国会質疑は当たり前のことを聞いているように感じるのですが、やはり自民党の一員になって政府に手厳しい質疑はできなくなったのではないでしょうか？</h4>
+                                <p class="text-gray-700">A: 山田太郎議員は野党時代から大臣などの相手を困らせるための国会質疑をしていませんでした。</p>
+                                <p>山田太郎議員にとって、国会質疑は相手の無知を印象付けようと視聴者にアピールするためのものではなく、自分の制作を実現するうえでのピースを集めるためのものです。少し分かりづらいと思いますので、例を上げながら解説します。</p>
+                                <p>・・・・・・</p>
                             </div>
 
-                            <div id="regional-revitalization" class="bg-gray-50 p-4 rounded-lg relative">
-                                <button onclick="copyToClipboard('#regional-revitalization')" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 transition-colors">
+                            <div id="invoice" class="bg-gray-50 p-4 rounded-lg relative">
+                                <button onclick="copyToClipboard('#invoice')" class="absolute top-2 right-2  text-gray-500 hover:text-gray-700 transition-colors">
                                     <svg class="w-5 h-5 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
                                     </svg>
                                 </button>
-                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 地方創生についてはどのような取り組みをしていますか？</h4>
-                                <p class="text-gray-700">A: 地方創生においても、コンテンツ産業の振興や表現の自由を活かした地域活性化に取り組んでいます。</p>
-                                <p>漫画・アニメ・ゲームなどのコンテンツを活用した地域振興や、デジタル化による地方の情報格差解消にも力を入れています。</p>
+                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: </h4>
+                                <p class="text-gray-700">A: （小山秘書）インボイス問題が税調で「いや、もうこのままやります」ということになって、そこから山田さんが帰ってきた時はなんかもう悲しんでるというよりも、燃え尽きてしょぼーんとしてるように見えたというのは結構印象的で、普段何があっても結構前を向いてずっとやってるんですが……</p>
+                                <p>（山田議員）インボイスは結構十数回以上、直でやってて、かなり時間使って使ってたし、今でも使ってるんです。僕は、ぶっちゃけこれはよく皆さんに素直に謝らなきゃいけないんだけど、（インボイスの）2年延期勝ち取れると思ってたからね。やっぱり動いたなと思ったのは中小企業捜査会だよね。あの時にインボイス反対論はものすごく、出たんですね。これはさすがに山が動いたなと思って、このまま提言書を出してもしかしたら延長はあるかなって動いたと思ったんだけど、次の週ですよ。中小企業調査会に行ったら反対派だらけ！「インボイスやるべきだ」っていう人だらけで、これ財務省すげえなと思ったよね。一気に雰囲気が変わってて、ぶっ潰されたもんね。甘かったよなと思って、あれで打ちひしがれたんだよね。それまでは相当仕掛けてたし、緻密にやってきたし、財務省とも交渉してきたし……。2年延期して（その間に）形変えられると真剣に思ったことがあったんだけど、負けたよね。</p>
+                                <p>（小山秘書）私も山田さんとやってきて、あそこまでちょっと見事に、逆にやられたなってのはあまり経験がないので、こちらもこちらで結構ショックでした。</p>
                             </div>
                         </div>
                     </div>
