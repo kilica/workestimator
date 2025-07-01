@@ -16,8 +16,10 @@
                                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                                         <!-- 基本情報 -->
                                         <div>
-                                            <h3 class="text-lg font-semibold text-gray-900 mb-2">
-                                                {{ $evaluation->work->title }}
+                                            <h3 class="text-lg font-semibold mb-2">
+                                                <a href="{{ route('works.show', $evaluation->work_id) }}" class="text-blue-600 hover:text-blue-900 hover:underline">
+                                                    {{ $evaluation->work->title }}
+                                                </a>
                                             </h3>
                                             <div class="text-sm text-gray-600 mb-4">
                                                 <p><strong>評価者:</strong> {{ $evaluation->user->name }}</p>
