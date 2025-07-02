@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('実績評価一覧') }}
+            {{ __('みんなの評価') }}
         </h2>
     </x-slot>
 
@@ -22,7 +22,7 @@
                                                 </a>
                                             </h3>
                                             <div class="text-sm text-gray-600 mb-4">
-                                                <p><strong>評価者:</strong> {{ $evaluation->user->name }}</p>
+                                                <p><strong>評価者:</strong> {{ $evaluation->user->display_name }}</p>
                                                 <p><strong>投稿日時:</strong> {{ $evaluation->created_at->format('Y年m月d日 H:i') }}</p>
                                             </div>
                                             
@@ -68,7 +68,7 @@
 
                                         <!-- 感情タグ -->
                                         <div>
-                                            <h4 class="text-sm font-medium text-gray-700 mb-2">感情タグ</h4>
+                                            <h4 class="text-sm font-medium text-gray-700 mb-2">評価タグ</h4>
                                             <div class="flex flex-wrap gap-2">
                                                 @if($evaluation->helped)
                                                     <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
