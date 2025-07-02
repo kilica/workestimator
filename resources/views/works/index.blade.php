@@ -199,6 +199,29 @@
                 @endforelse
             </div>
             <div>
+                <h2>実績解説動画</h2>
+                <div class="flex flex-wrap space-x-8">
+                    <div class="mb-8">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/oWHBu0FZMYw?si=V57sN93iAr8RC4SR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="mb-8">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/4aFooEse7MQ?si=xebS8l3zR-4XG_6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="mb-8">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/se1ujk_qIus?si=gpQi3XZfiV1H-VXz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="mb-8">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/hWmEYbeRMAc?si=zEuaXiYUEI11uM44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="mb-8">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DSlJ6B8CKHc?si=ANZM89ve-f6rK4ZX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="mb-8">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/HWGftVFSjWk?si=l0UfX3hae5k8E2cR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div>
                 <h2>表現の自由・その他政策 実績一覧</h2>
                 <img src="/images/worksmap-official-hyogen.png" />
                 <h2>こども・障がい者政策 実績一覧</h2>
