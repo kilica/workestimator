@@ -16,6 +16,7 @@
                     <p class="p-6">このサイトでは、参議院議員　山田太郎議員の主な<a href="/works">実績</a>を分かりやすく紹介しています。各実績の最後には、皆さんの<strong>感想や応援メッセージを投稿</strong>できるようになっていますので、よければ<a href="/register">ユーザー登録</a>して投稿してください。</p>
                     <div>
                         <img src="/images/worksmap.png" alt="山田太郎議員 実績マップ" height="500px" />
+                        <a href="/works"><img src="/images/banner-link-works.png" alt="実績へのリンクバナー" class="mt-16" /></a>
                     </div>
                     <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-16">山田太郎議員の紹介</h2>
                     <div class="prose max-w-none">
@@ -75,13 +76,13 @@
                         <div class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
                             <div class="flex">
                                 <div class="ml-3">
-                                    <p class="text-sm text-blue-700">
+                                    <p class="text-blue-700">
                                         <strong>参議院選挙 全国比例代表</strong>で「山田太郎」とお書きください
                                     </p>
-                                    <p class="text-sm text-blue-700">
+                                    <p class="text-blue-700">
                                         政党名を書いても山田太郎議員の票にはなりません。必ず、<strong>「山田太郎」と氏名</strong>  を書いてください。
                                     </p>
-                                    <p class="text-sm text-blue-700">
+                                    <p class="text-blue-700">
                                         参議院選挙 <strong>全国比例代表</strong>での立候補なので、<strong>日本全国どこにお住いの方でも投票可能</strong>です。
                                     </p>
                                 </div>
@@ -89,6 +90,7 @@
                         </div>
                         
                         <h3 class="text-lg font-semibold mb-3">投票方法</h3>
+                        <p><a href="https://www.soumu.go.jp/2025senkyo/" target="_blank">総務省 参議院選挙のサイトもご覧ください。</a></p>
                         <div class="grid md:grid-cols-2 gap-6">
                             <div>
                                 <h4 class="font-semibold mb-2">1. 投票所での投票</h4>
@@ -113,7 +115,7 @@
                         <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mt-6">
                             <div class="flex">
                                 <div class="ml-3">
-                                    <p class="text-sm text-yellow-700">
+                                    <p class="text-yellow-700">
                                         <strong>重要:</strong> 参議院選挙では「選挙区」と「比例代表」の2票があります。
                                         比例代表の投票用紙に「山田太郎」とお書きください。
                                     </p>

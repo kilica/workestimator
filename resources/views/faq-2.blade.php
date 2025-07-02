@@ -23,6 +23,21 @@
                         </h3>
 
                         <div class="space-y-6">
+                            <div id="who-regulate" class="bg-gray-50 p-4 rounded-lg relative">
+                                <div class="flex justify-end mb-4">
+                                    <button onclick="copyToClipboard('#who-regulate')" class="absolute top-2 right-2  text-gray-500 hover:text-gray-700 transition-colors">
+                                        <svg class="w-5 h-5 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: いま、どのような人が表現規制をしているのですか？</h4>
+                                <p class="text-gray-700">
+                                    <img src="/images/faq-hyogen-01.png" class="mb-8 " />
+                                    <img src="/images/faq-hyogen-02.png" />
+                                </p>
+                            </div>
+
                             <div id="175-deletion" class="bg-gray-50 p-4 rounded-lg relative">
                                 <div class="flex justify-end mb-4">
                                     <button onclick="copyToClipboard('#175-deletion')" class="absolute top-2 right-2  text-gray-500 hover:text-gray-700 transition-colors">
