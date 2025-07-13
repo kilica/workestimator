@@ -24,6 +24,9 @@
                     <x-nav-link :href="route('faq-2')" :active="request()->routeIs('faq-2')">
                         {{ __('FAQ（政策）') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('faq-h')" :active="request()->routeIs('faq-h')">
+                        {{ __('FAQ（落選運動）') }}
+                    </x-nav-link>
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
@@ -112,6 +115,9 @@
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('faq-2')" :active="request()->routeIs('faq-2')">
                 {{ __('FAQ（政策）') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('faq-h')" :active="request()->routeIs('faq-h')">
+                {{ __('FAQ（落選運動）') }}
             </x-responsive-nav-link>
             
             @auth

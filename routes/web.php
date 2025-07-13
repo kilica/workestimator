@@ -25,6 +25,7 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 
 Route::get('/faq', [FaqController::class, 'index'])->name('faq');
 Route::get('/faq-2', [FaqController::class, 'faq2'])->name('faq-2');
+Route::get('/faq-h', [FaqController::class, 'faqH'])->name('faq-h');
 
 Route::get('/dashboard', [UserController::class, 'show'])
     ->middleware(['auth', 'verified'])

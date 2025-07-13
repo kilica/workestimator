@@ -21,4 +21,12 @@ class FaqController extends Controller
     {
         return view('faq-2');
     }
+
+    /**
+     * Display the third FAQ page (落選運動).
+     */
+    public function faqH()
+    {
+        return view('faq-h');
+    }
 }
