@@ -113,6 +113,13 @@
                                                 {{ Str::limit($evaluation->comment, 50) }}
                                             </td>
                                             <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                                <a href="https://twitter.com/intent/tweet?text={{ urlencode('山田太郎議員の実績「' . $evaluation->work->title . '」: '. mb_substr($evaluation->comment, 0, 80) .' ' . $evaluation->work->improvements) }}&url={{ urlencode(route('works.show', $evaluation->work->id)) }}" target="_blank" class="text-sm text-blue-500 hover:text-blue-700">
+                                                    <svg class="inline-block w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                                                    </svg>
+                                                    {{ __('X.comに投稿する') }}
+                                                </a>
+
                                                 <a href="{{ route('work-evaluations.edit', $evaluation->id) }}" class="text-indigo-600 hover:text-indigo-900 mr-3">
                                                     {{ __('編集') }}
                                                 </a>

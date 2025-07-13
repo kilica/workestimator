@@ -22,15 +22,14 @@
                                                 </a>
                                             </h3>
                                             <div class="text-sm text-gray-600 mb-4">
-                                                <p><strong>評価者:</strong> {{ $evaluation->user->display_name }}</p>
-                                                <p><strong>投稿日時:</strong> {{ $evaluation->created_at->format('Y年m月d日 H:i') }}</p>
+                                                <p><strong>by:</strong> {{ $evaluation->user->display_name }}  <span class="ml-4">{{ $evaluation->created_at->format('Y年m月d日') }}</span></p>
                                             </div>
                                             
                                             <!-- 関心度と評価 -->
-                                            <div class="grid grid-cols-2 gap-4 mb-4">
-                                                <div>
-                                                    <span class="text-sm font-medium text-gray-700">関心度:</span>
-                                                    <div class="flex items-center mt-1">
+                                            <div>
+                                                <div class="flex">
+                                                    <span class="text-sm font-medium text-gray-700">関心:</span>
+                                                    <div class="flex items-center">
                                                         @for($i = 1; $i <= 3; $i++)
                                                             @if($i <= $evaluation->interest_level->value)
                                                                 <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
@@ -46,9 +45,9 @@
                                                     </div>
                                                 </div>
                                                 
-                                                <div>
+                                                <div class="flex">
                                                     <span class="text-sm font-medium text-gray-700">評価:</span>
-                                                    <div class="flex items-center mt-1">
+                                                    <div class="flex items-center">
                                                         @for($i = 1; $i <= 3; $i++)
                                                             @if($i <= $evaluation->evaluation_rating->value)
                                                                 <svg class="w-4 h-4 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
@@ -127,8 +126,7 @@
                                     <!-- 応援コメント -->
                                     @if($evaluation->comment)
                                         <div class="mt-4 pt-4 border-t border-gray-200">
-                                            <h4 class="text-sm font-medium text-gray-700 mb-2">応援コメント</h4>
-                                            <div x-data="{ expanded: false }" class="text-sm text-gray-600">
+                                            <div x-data="{ expanded: false }" class="text-gray-600">
                                                 @php
                                                     $lines = explode("\n", $evaluation->comment);
                                                     $firstLine = $lines[0] ?? '';
@@ -138,7 +136,7 @@
                                                 <div x-show="!expanded">
                                                     <p>{{ $firstLine }}</p>
                                                     @if($hasMoreLines)
-                                                        <button @click="expanded = true" class="mt-1 text-blue-600 hover:text-blue-800 text-xs font-medium">
+                                                        <button @click="expanded = true" class="mt-1 text-blue-600 text-xs hover:text-blue-800 font-medium">
                                                             [+] 続きを表示
                                                         </button>
                                                     @endif
@@ -147,7 +145,7 @@
                                                 <div x-show="expanded" x-cloak>
                                                     <div class="whitespace-pre-line">{{ $evaluation->comment }}</div>
                                                     @if($hasMoreLines)
-                                                        <button @click="expanded = false" class="mt-1 text-blue-600 hover:text-blue-800 text-xs font-medium">
+                                                        <button @click="expanded = false" class="mt-1 text-blue-600 text-xs hover:text-blue-800 font-medium">
                                                             [-] 折りたたむ
                                                         </button>
                                                     @endif

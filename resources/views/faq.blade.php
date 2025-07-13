@@ -41,6 +41,7 @@
                                     <li>派閥や団体のしがらみがなく活動している</li>
                                     <li>表現の自由を守ってくれる</li>
                                 </ul>
+                                <p>よければ <a href="https://posfie.com/@daiginjo/p/uZCLVF7?draft=1">表現の自由を守る国会議員「#あなたの山田太郎はどこから」？ - posfie</a> も御覧ください</p>
                             </div>
 
                             <div id="why-ldp" class="bg-gray-50 p-4 rounded-lg relative">
@@ -52,13 +53,15 @@
                                     </button>
                                 </div>
                                 <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: なぜ自民党から出ているのですか？　表現の自由にとって敵のような党ではないですか？</h4>
-                                <p class="text-gray-700">A: 確かに山田太郎議員が自民党に入った時点では表現規制勢力の強い党でした。</p>
+                                <p class="text-gray-700"><img src="/images/faq-hyogen-why-ldp.png" /></p>
+                                <p class="mb-8"><a href="https://twitter.com/intent/tweet?text=pic.twitter.com/L7KOMTe6Cr" target="_blank">この画像を使って X にポストする</a></p>
+                                <p>A: 確かに山田太郎議員が自民党に入った時点では表現規制勢力の強い党でした。</p>
                                 <p>しかし、自民党（与党）に入ることは、表現の自由を守るうえで非常に大きなメリットもあります。</p>
                                 <p>まず与党の議員の場合、<strong>法案が審議される前に</strong>官僚から相談を受け、修正を指示したり調整することができるようになります。この段階では、修正は比較的容易ですが、多くの人の合意を受けたあと、審議に入る頃には修正するには合意の取り直しになるため修正に対し抵抗が生まれてしまいます。</p>
                                 <p>また法案が審議される自民党の部会では<strong>全会一致が法案通過の原則なので、山田太郎議員一人が反対を貫けば法案を止めることができます</strong>。</p>
                                 <p>もし山田太郎議員が野党だと、反対できるようになるのは国会です。国会では最終的に多数決なので、山田太郎議員一人がどれだけ反対したところで法案は成立してしまいます。</p>
                                 <p>実際、山田太郎議員が自民党に入って以来、表現を規制する法案は国会に出なくなりました。</p>
-                                <p>また、2025年参議院選挙の<strong>公約</strong>では「表現の自由」という言葉まで載るようになり、山田太郎議員の活動が自民党に大きな影響を及ぼすようになっています。</p>
+                                <p>また、2025年参議院選挙の<strong>自民党の公約</strong>では「表現の自由」という言葉まで載るようになりました。載ったからといって（我々の期待する形で）守るとは限らないのはもちろんですが、山田太郎議員の活動が自民党とって無視できないものになっているのは確かです。</p>
                             </div>
 
                             <div id="yamada-supporters" class="bg-gray-50 p-4 rounded-lg relative">
@@ -71,9 +74,9 @@
                                 </div>
                                 <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: どんな人、団体が山田太郎議員を支持しているのですか？</h4>
                                 <p class="text-gray-700">A: 一番コアな支持者は「表現の自由」を重視する漫画・アニメ・ゲームなどのコンテンツが好きな人たちです。</p>
-                                <p>また、こども家庭庁を創設し、児童手当の所得制限撤廃や発達障害の支援拡充を実現したため、子育て世代の方にも支持が広まっています。</p>
-                                <p>また、フリーランス新法で若者やフリーランスの方々からの支持を集めました。</p>
-                                <p>国立国会図書館のデジタル化では、研究者の方から強い支持を受けています。</p>
+                                <p>また、<a href="/works/11">こども家庭庁を創設</a>し、<a href="/works/14">社会的養護の充実</a>、<a href="https://taroyamada.jp/works/works-45189/" target="_blank">児童手当の所得制限撤廃</a>や<a href="https://taroyamada.jp/works/works-45181/" target="_blank">発達障害の支援拡充</a>を実現したため、子育て世代の方にも支持が広まっています。</p>
+                                <p>また、<a href="/works/3">フリーランス新法</a>で若者やフリーランスの方々からの支持を集めました。</p>
+                                <p><a href="/works/1">国立国会図書館のデジタル化</a>では、研究者の方から強い支持を受けています。</p>
                                 <p>このように、表現の自由を中核に、幅広い支持を集めるようになっています。</p>
                             </div>
 
@@ -129,7 +132,7 @@
                                 </div>
                                 <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 次回の選挙はいつですか？</h4>
                                 <p class="text-gray-700">A: 参議院議員の任期は6年で、次回の参議院選挙は<strong>2025年7月20日（日）</strong>です（7:00-20:00）。</p>
-                                <p>告示日は 7/3 で、翌日の 7/4（金）8:30 から<strong>「期日前投票」</strong>が可能です。</p>
+                                <p>7/4（金）8:30 から<strong>「期日前投票」</strong>が可能です。</p>
                             </div>
                             
                             <div id="election-district" class="bg-gray-50 p-4 rounded-lg relative">
@@ -142,6 +145,7 @@
                                 </div>
                                 <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: どの選挙区から立候補していますか？</h4>
                                 <p class="text-gray-700">A: 山田太郎議員は全国比例代表選挙区から立候補しています。<strong>全国どこからでも「山田太郎」と書いて投票</strong>することが出来ます。</p>
+                                <p><img src="/images/everyone-vote.jpg" /></p>
                             </div>
                             
                             <div id="voting-method" class="bg-gray-50 p-4 rounded-lg relative">
@@ -154,6 +158,7 @@
                                 </div>
                                 <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 投票方法を教えてください</h4>
                                 <p class="text-gray-700">A: 山田太郎議員は2025年7月の参議院選挙では全国比例代表で立候補しています。そのため比例代表（2枚目）では、個人名（<strong>「山田太郎」</strong>）をお書きください。所属政党名を書いても山田太郎議員の当選にはほとんど影響しません。</p>
+                                <p><img src="/images/vote_to_yamada.png" alt="" /></p>
                             </div>
 
                             <div id="akamatsu" class="bg-gray-50 p-4 rounded-lg relative">
@@ -177,7 +182,7 @@
                                     </button>
                                 </div>
                                 <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 山田太郎議員を応援したいと強く思いました。なにか力になれることはありますか？</h4>
-                                <p class="text-gray-700">A: <a href="https://taroyamada.jp/sns">公式ホームページに応援方法がまとめられています</a>ので、ご覧いただきぜひお力をお貸しください。Xで山田太郎議員をフォローしたりリポストしたりと、簡単なことから始めることができます。</p>
+                                <p class="text-gray-700">A: <a href="https://taroyamada.jp/sns" target="_blank">公式ホームページに応援方法がまとめられています</a>ので、ご覧いただきぜひお力をお貸しください。Xで山田太郎議員をフォローしたりリポストしたりと、簡単なことから始めることができます。</p>
                             </div>
 
                             <div id="too-many-vote" class="bg-gray-50 p-4 rounded-lg relative">
@@ -234,12 +239,15 @@
                                     </button>
                                 </div>
                                 <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 表現の自由を守ってくれるという別の候補に入れようと思います。</h4>
-                                <p class="text-gray-700">A: 山田太郎議員を推している当サイトとしては山田議員に入れていただきたいところですが、表現の自由を守ってくれる議員が増えることは喜ばしいことです。</p>
+                                <p class="text-gray-700"><img src="/images/faq-hyogen-protect-expression.png" /></p>
+                                <p class="mb-8"><a href="https://twitter.com/intent/tweet?text=pic.twitter.com/w6LKuVCP3E" target="_blank">この画像を使って X にポストする</a></p>
+                                <p>A: 山田太郎議員を推している当サイトとしては山田議員に入れていただきたいところですが、表現の自由を守ってくれる議員が増えることは喜ばしいことです。</p>
                                 <p>ただし、口だけでなく本当に守ってくれるかというのはしっかり見極めていただけますと幸いです。</p>
                                 <p>「表現の自由は重要だ」という議員でも、よくよく聞いてみると<strong>「いや、ここまでひどいものは流石に規制しないと」</strong>という考えを持っていることがよくあります。</p>
                                 <p>これも一つの見識かと思いますが、「ここまでひどいもの」というのは、人によってまちまちですので、質問者さんの感覚に一致しているか見極めが必要です。</p>
                                 <p>また、一度法律で規制されたものについて、その<strong>規制を外すのは、規制がかかる前に防ぐよりも何倍も困難</strong>です。それどころか「規制は拡大していくもの」と考えたほうがいいでしょう。「こういう問題が起きたからこれだけは規制しよう」で始まった規制も、「こんな問題も起きたからこれも同じように規制しよう」がどんどん増えていくものです。</p>
                                 <p>後悔の無いよう、候補者を選んでください。</p>
+                                <p><a href="https://x.com/kilica/status/1941712819382304947">詳しい解説ポスト</a></p>
                             </div>
                         </div>
                     </div>
@@ -274,13 +282,16 @@
                                     </button>
                                 </div>
                                 <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 自民党だと党議拘束で山田太郎議員は何も出来ないと聞きました。本当でしょうか？</h4>
-                                <p class="text-gray-700">A: 全くの間違いです。</p>
+                                <p class="text-gray-700"><img src="/images/faq-01.png" /></p>
+                                <p>A: 全くの間違いです。</p>
                                 <p>山田太郎議員が自分の意見を通して数多くの実績を残していることからも分かると思います。</p>
                                 <p>例えば、こども庁、こども基本法では保守派の議員からの強い反対がありましたが、成立させています。</p>
+                                <p>また、表現の自由を守るうえで問題があれば、選対委員長の肝いり法案でも潰してしまいます。</p>
                                 <p>たしかに、部会（政務調査会）を通った法案については党議拘束によって反対できなくなりますが、自民党の議員であれば部会には参加可能なので、そこで反対するなり修正させるなりができます。</p>
                                 <p>さらには、山田太郎議員の場合は、部会に上る前の官僚が法案を作っている段階で修正させています（表現の自由に関わる法案の場合、官僚が相談に来ます）。</p>
                                 <p>山田太郎議員はたくさんの法案を作る議員なので、むしろ党議拘束によって自らの法案を成立させることができ、メリットの方が上回っているかもしれません。</p>
-                                <p><img src="/images/faq-01.png" /></p>
+                                <p><img src="/images/faq-hyogen-download-restrict.png" /></p>
+                                <p class="mb-8"><a href="https://twitter.com/intent/tweet?text=pic.twitter.com/bHJvpX3pzq" target="_blank">この画像を使って X にポストする</a></p>
                             </div>
 
                             <div id="ldp-faction-influence" class="bg-gray-50 p-4 rounded-lg relative">
@@ -308,7 +319,7 @@
                                 <h4 class="font-semibold text-lg text-gray-800 mb-2">Q: 山田さんのおかげで自民党が表現規制をしなくなったとはいえ、それでも野党のほうが安全では？</h4>
                                 <p class="text-gray-700">A: 残念ながら、状況は非常に厳しいものがあります。</p>
                                 <p>共産党、国民民主党、立憲民主党はいずれもアダルトなどの表現を積極的に規制する方針を打ち出しています。</p>
-                                <p>参政党も、党首の神谷さんが<a href="https://x.com/jinkamiya/status/1937890297696141817">表現規制の必要性をXで発言</a>しています。</p>
+                                <p>参政党も、党首の神谷さんが<a href="https://x.com/jinkamiya/status/1937890297696141817" target="_blank">表現規制の必要性をXで発言</a>しています。</p>
                                 <p><img src="/images/faq-06.png" /></p>
                             </div>
 

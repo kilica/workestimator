@@ -18,6 +18,71 @@
                         <img src="/images/worksmap.png" alt="山田太郎議員 実績マップ" height="500px" />
                         <a href="/works"><img src="/images/banner-link-works.png" alt="実績へのリンクバナー" class="mt-16" /></a>
                     </div>
+                </div>
+            </div>
+
+
+            <!-- 投票について -->
+            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg mb-8">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">投票について</h2>
+                    <img src="/images/everyone-vote.jpg" alt="山田太郎議員への投票方法" />
+                    <div class="prose max-w-none">
+                        <div class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
+                            <div class="flex">
+                                <div class="ml-3">
+                                    <p class="text-blue-700">
+                                        <strong>参議院選挙 全国比例代表</strong>で「山田太郎」とお書きください
+                                    </p>
+                                    <p class="text-blue-700">
+                                        政党名を書いても山田太郎議員の票にはなりません。必ず、<strong>「山田太郎」と氏名</strong>  を書いてください。
+                                    </p>
+                                    <p class="text-blue-700">
+                                        参議院選挙 <strong>全国比例代表</strong>での立候補なので、<strong>日本全国どこにお住いの方でも投票可能</strong>です。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="text-lg font-semibold mb-3">投票方法</h3>
+                        <p><a href="https://www.soumu.go.jp/2025senkyo/" target="_blank">総務省 参議院選挙のサイトもご覧ください。</a></p>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-semibold mb-2">1. 投票所での投票</h4>
+                                <ul class="list-disc list-inside text-gray-700 space-y-1 mb-4">
+                                    <li>投票日当日に指定された投票所へ</li>
+                                    <li>投票券を持参してください（紛失しても投票可能です）</li>
+                                    <li>比例代表の投票用紙に「山田太郎」と記入</li>
+                                    <li>投票時間: 通常、午前7時〜午後8時</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-2">2. 期日前投票</h4>
+                                <ul class="list-disc list-inside text-gray-700 space-y-1 mb-4">
+                                    <li>投票日前でも投票可能</li>
+                                    <li>市区町村の選挙管理委員会で実施</li>
+                                    <li>身分証明書をお持ちください</li>
+                                    <li>期間: 公示日翌日〜投票日前日</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mt-6">
+                            <div class="flex">
+                                <div class="ml-3">
+                                    <p class="text-yellow-700">
+                                        <strong>重要:</strong> 参議院選挙では「選挙区」と「比例代表」の2票があります。
+                                        比例代表の投票用紙に「山田太郎」とお書きください。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg mb-8">
+                <div class="p-6">
                     <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-16">山田太郎議員の紹介</h2>
                     <div class="prose max-w-none">
                         <div class="grid md:grid-cols-2 gap-6">
@@ -68,63 +133,6 @@
                 </div>
             </div>
 
-            <!-- 投票について -->
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg mb-8">
-                <div class="p-6">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-4">投票について</h2>
-                    <div class="prose max-w-none">
-                        <div class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
-                            <div class="flex">
-                                <div class="ml-3">
-                                    <p class="text-blue-700">
-                                        <strong>参議院選挙 全国比例代表</strong>で「山田太郎」とお書きください
-                                    </p>
-                                    <p class="text-blue-700">
-                                        政党名を書いても山田太郎議員の票にはなりません。必ず、<strong>「山田太郎」と氏名</strong>  を書いてください。
-                                    </p>
-                                    <p class="text-blue-700">
-                                        参議院選挙 <strong>全国比例代表</strong>での立候補なので、<strong>日本全国どこにお住いの方でも投票可能</strong>です。
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <h3 class="text-lg font-semibold mb-3">投票方法</h3>
-                        <p><a href="https://www.soumu.go.jp/2025senkyo/" target="_blank">総務省 参議院選挙のサイトもご覧ください。</a></p>
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div>
-                                <h4 class="font-semibold mb-2">1. 投票所での投票</h4>
-                                <ul class="list-disc list-inside text-gray-700 space-y-1 mb-4">
-                                    <li>投票日当日に指定された投票所へ</li>
-                                    <li>投票券を持参してください（紛失しても投票可能です）</li>
-                                    <li>比例代表の投票用紙に「山田太郎」と記入</li>
-                                    <li>投票時間: 通常、午前7時〜午後8時</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold mb-2">2. 期日前投票</h4>
-                                <ul class="list-disc list-inside text-gray-700 space-y-1 mb-4">
-                                    <li>投票日前でも投票可能</li>
-                                    <li>市区町村の選挙管理委員会で実施</li>
-                                    <li>身分証明書をお持ちください</li>
-                                    <li>期間: 公示日翌日〜投票日前日</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mt-6">
-                            <div class="flex">
-                                <div class="ml-3">
-                                    <p class="text-yellow-700">
-                                        <strong>重要:</strong> 参議院選挙では「選挙区」と「比例代表」の2票があります。
-                                        比例代表の投票用紙に「山田太郎」とお書きください。
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <!-- 応援方法 -->
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg mb-8">
@@ -134,6 +142,9 @@
                         <p class="text-gray-700 mb-6">
                             山田太郎議員の活動を応援していただく方法をご紹介します。
                             皆様のご支援が政治活動の大きな力となります。
+                        </p>
+                        <p class="mb-6">
+                            <img src="/images/howto-support.png" />
                         </p>
                         
                         <div class="grid md:grid-cols-2 gap-6">
@@ -164,19 +175,17 @@
                                     <svg class="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
                                     </svg>
-                                    街宣活動・イベント参加
+                                    公式ツール
                                 </h3>
                                 <ul class="list-disc list-inside text-gray-700 space-y-2">
-                                    <li><strong>街頭演説:</strong> 駅前・商店街での演説に参加</li>
-                                    <li><strong>ボランティア:</strong> チラシ配布・会場設営のお手伝い</li>
-                                    <li><strong>個人演説会:</strong> 支援者向けイベントへの参加</li>
+                                    <p>ぜひ使って応援してね！</p>
+                                    <li><a href="https://taroyamada.etamegaki.com/">電子為書き（山田太郎議員への応援メッセージ）を送る</a></li>
+                                    <li><a href="https://vote2025.taroyamada.jp/">投票報告</a> </li>
                                 </ul>
                                 <div class="mt-4">
-                                    <h4 class="font-semibold mb-2">参加方法</h4>
+                                    <h4 class="font-semibold mb-2">選挙ページ</h4>
                                     <ul class="list-disc list-inside text-gray-700 space-y-1">
-                                        <li>事務所への電話・メールでお申し込み</li>
-                                        <li>公式サイトのイベント情報をチェック</li>
-                                        <li>SNSでの最新情報をフォロー</li>
+                                        <li><a href="https://taroyamada.jp/?p=45883">山田太郎公式サイト　選挙特設ページ</a></li>
                                     </ul>
                                 </div>
                             </div>

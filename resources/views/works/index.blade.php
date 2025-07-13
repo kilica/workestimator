@@ -219,6 +219,9 @@
                     <div class="mb-8">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/HWGftVFSjWk?si=l0UfX3hae5k8E2cR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
+                    <div class="mb-8">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/l_iljA31fgs?si=JhJbpFHMXZkI4jHK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
             <div>
